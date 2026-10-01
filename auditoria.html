@@ -605,20 +605,30 @@
       white-space: nowrap;
     }
 
-    .btn-wa {
-      background: #25d366;
-      color: #fff;
-      padding: 4px 8px;
+    .btn-copy-phone {
+      background: #1f2b42;
+      color: #93c5fd;
+      border: 1px solid #2e4368;
+      padding: 4px 10px;
       border-radius: 6px;
       font-size: 0.75rem;
       font-weight: 700;
-      text-decoration: none;
+      cursor: pointer;
       display: inline-flex;
       align-items: center;
       gap: 4px;
+      transition: all 0.15s ease;
+      white-space: nowrap;
     }
-    .btn-wa:hover {
-      filter: brightness(1.1);
+    .btn-copy-phone:hover {
+      background: #253754;
+      color: #fff;
+      border-color: var(--accent);
+    }
+    .btn-copy-phone.copied {
+      background: var(--success);
+      color: #fff;
+      border-color: var(--success);
     }
 
     .btn-copy {
@@ -1631,10 +1641,9 @@ Vidriería
               <td><span class="badge-rubro">${escapeHtml(record.rubro || 'General')}</span></td>
               <td>
                 <div class="phone-cell">
-                  <span>${escapeHtml(record.telefono || '—')}</span>
+                  <span style="font-family: monospace; font-size: 0.86rem;">${escapeHtml(record.telefono || '—')}</span>
                   ${record.telefono ? `
-                    <a href="${waLink}" target="_blank" class="btn-wa" title="Abrir WhatsApp">💬 WA</a>
-                    <button class="btn-copy" onclick="copyText('${record.telefono}')" title="Copiar número">📋</button>
+                    <button class="btn-copy-phone" onclick="copyPhoneNumber(this, '${cleanPhone(record.telefono)}')" title="Copiar número directamente">📋 Copiar</button>
                   ` : ''}
                 </div>
               </td>
@@ -1724,7 +1733,14 @@ Vidriería
             <td><span class="badge-id">#${r.id}</span></td>
             <td><strong>${escapeHtml(r.nombre)}</strong></td>
             <td><span class="badge-rubro">${escapeHtml(r.rubro)}</span></td>
-            <td>${escapeHtml(r.telefono)}</td>
+            <td>
+              <div class="phone-cell">
+                <span style="font-family: monospace; font-size: 0.86rem;">${escapeHtml(r.telefono || '—')}</span>
+                ${r.telefono ? `
+                  <button class="btn-copy-phone" onclick="copyPhoneNumber(this, '${cleanPhone(r.telefono)}')" title="Copiar número directamente">📋 Copiar</button>
+                ` : ''}
+              </div>
+            </td>
             <td><span class="badge-rubro" style="background:#243047; color:#fff;">${r.estado}</span></td>
             <td>
               <input type="text" class="fundamento-input" value="${escapeHtml(r.fundamento)}" 
@@ -2177,6 +2193,21 @@ Vidriería
     function escapeCSV(text) {
       if (!text) return '';
       return String(text).replace(/"/g, '""');
+    }
+
+    function copyPhoneNumber(btn, phone) {
+      navigator.clipboard.writeText(phone).then(() => {
+        const prev = btn.innerHTML;
+        btn.innerHTML = '✅ Copiado!';
+        btn.classList.add('copied');
+        showToast(`Número copiado: ${phone}`, 'success');
+        setTimeout(() => {
+          btn.innerHTML = prev;
+          btn.classList.remove('copied');
+        }, 1400);
+      }).catch(() => {
+        showToast(`Copiado: ${phone}`, 'info');
+      });
     }
 
     function copyText(str) {
