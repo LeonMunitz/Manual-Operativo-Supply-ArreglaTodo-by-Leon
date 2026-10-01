@@ -1,0 +1,3892 @@
+[
+  {
+    "id": "19715",
+    "nombre": "Diego",
+    "rubro": "Vidriería",
+    "telefono": "59896339883",
+    "estado": "Pendientes",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "20081",
+    "nombre": "Egle Masiliunaite",
+    "rubro": "Carpintería",
+    "telefono": "37060207070",
+    "estado": "Pendientes",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "20105",
+    "nombre": "Sandra Amarante",
+    "rubro": "Carpintería",
+    "telefono": "59899597737",
+    "estado": "Pendientes",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19518",
+    "nombre": "Alejandro Villar",
+    "rubro": "Limpieza",
+    "telefono": "59899547062",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19521",
+    "nombre": "Ro",
+    "rubro": "Limpieza",
+    "telefono": "59891081508",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19523",
+    "nombre": "Juan Pablo",
+    "rubro": "Arreglos varios",
+    "telefono": "59892056203",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19524",
+    "nombre": "Juan Pablo",
+    "rubro": "Electricidad",
+    "telefono": "59892056203",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19525",
+    "nombre": "Agustin Gerlach",
+    "rubro": "Arreglos varios",
+    "telefono": "59892545813",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19527",
+    "nombre": "Daniel",
+    "rubro": "Sanitaria",
+    "telefono": "59899646363",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19529",
+    "nombre": "Geraldine Pedreira",
+    "rubro": "Limpieza",
+    "telefono": "59893405020",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19531",
+    "nombre": "Camila",
+    "rubro": "Sanitaria",
+    "telefono": "59895370205",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19535",
+    "nombre": "Raquel Alma",
+    "rubro": "Limpieza",
+    "telefono": "59895191724",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19536",
+    "nombre": "Pamela Fagundez",
+    "rubro": "Electricidad",
+    "telefono": "59899242910",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19539",
+    "nombre": "Bibiana Moreira",
+    "rubro": "Limpieza",
+    "telefono": "59894255041",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19540",
+    "nombre": "Margarita",
+    "rubro": "Sanitaria",
+    "telefono": "59896218929",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19544",
+    "nombre": "María Belén Arias Tolosa",
+    "rubro": "Limpieza",
+    "telefono": "59898130339",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19545",
+    "nombre": "Andrea",
+    "rubro": "Sanitaria",
+    "telefono": "59899226749",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19546",
+    "nombre": "Laura",
+    "rubro": "Arreglos varios",
+    "telefono": "59899075984",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19548",
+    "nombre": "Caio Salles",
+    "rubro": "Arreglos varios",
+    "telefono": "59899479472",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19549",
+    "nombre": "Debora",
+    "rubro": "Vidriería",
+    "telefono": "59898941509",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19551",
+    "nombre": "Nahuel Galego",
+    "rubro": "Fletes",
+    "telefono": "59898754811",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19552",
+    "nombre": "Jona",
+    "rubro": "Sanitaria",
+    "telefono": "59892290701",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19553",
+    "nombre": "Maria Cristina",
+    "rubro": "Limpieza",
+    "telefono": "59898549548",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19555",
+    "nombre": "Martín Bustamante",
+    "rubro": "Limpieza",
+    "telefono": "59895850199",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19557",
+    "nombre": "Mirtha Kantor",
+    "rubro": "Limpieza",
+    "telefono": "972544828550",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19558",
+    "nombre": "Belen Luna",
+    "rubro": "Limpieza",
+    "telefono": "59891812412",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19561",
+    "nombre": "Flavia",
+    "rubro": "Limpieza",
+    "telefono": "59898487738",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19562",
+    "nombre": "Iair Canias",
+    "rubro": "Carpintería",
+    "telefono": "59892104957",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19565",
+    "nombre": "Martín",
+    "rubro": "Cerrajería",
+    "telefono": "59899702163",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19567",
+    "nombre": "Gustavo Laborde",
+    "rubro": "Carpintería",
+    "telefono": "59898965955",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19568",
+    "nombre": "Camila",
+    "rubro": "Sanitaria",
+    "telefono": "59899991385",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19570",
+    "nombre": "Silvia Baldi",
+    "rubro": "Limpieza",
+    "telefono": "59898220931",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19572",
+    "nombre": "María Laura Garat Bersanino",
+    "rubro": "Carpintería",
+    "telefono": "59894258800",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19573",
+    "nombre": "Maria Milagros",
+    "rubro": "Limpieza",
+    "telefono": "59893709720",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19574",
+    "nombre": "Noelia Poroyan",
+    "rubro": "Limpieza",
+    "telefono": "59892609370",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19586",
+    "nombre": "Eloisa",
+    "rubro": "Carpintería",
+    "telefono": "59895855816",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19587",
+    "nombre": "José nuñez",
+    "rubro": "Sanitaria",
+    "telefono": "59897500330",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19588",
+    "nombre": "Avril",
+    "rubro": "Pintura",
+    "telefono": "59894944306",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19592",
+    "nombre": "Mariana Fernández",
+    "rubro": "Limpieza",
+    "telefono": "59894606868",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19593",
+    "nombre": "Beatriz Muga",
+    "rubro": "Limpieza",
+    "telefono": "59899131922",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19596",
+    "nombre": "Magdalena",
+    "rubro": "Limpieza",
+    "telefono": "59899221081",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19597",
+    "nombre": "natalia luraschi",
+    "rubro": "Pintura",
+    "telefono": "59896718262",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19602",
+    "nombre": "Veronica",
+    "rubro": "Armado de muebles",
+    "telefono": "59899487273",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19603",
+    "nombre": "Cristobal",
+    "rubro": "Pintura",
+    "telefono": "59896984126",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19607",
+    "nombre": "Aníbal pintos",
+    "rubro": "Carpintería",
+    "telefono": "59898748718",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19608",
+    "nombre": "Rodrigo Silveira",
+    "rubro": "Armado de muebles",
+    "telefono": "59899276970",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19609",
+    "nombre": "Camila Charquero",
+    "rubro": "Limpieza",
+    "telefono": "59898004304",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19610",
+    "nombre": "Sofía Nande",
+    "rubro": "Limpieza",
+    "telefono": "59899713876",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19611",
+    "nombre": "Julio",
+    "rubro": "Armado de muebles",
+    "telefono": "59894771963",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19612",
+    "nombre": "Leticia Bruno",
+    "rubro": "Arreglos varios",
+    "telefono": "59895935981",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19614",
+    "nombre": "Johana",
+    "rubro": "Limpieza",
+    "telefono": "59898890678",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19619",
+    "nombre": "Gladys Diaz",
+    "rubro": "Limpieza",
+    "telefono": "59892962286",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19622",
+    "nombre": "Belén García",
+    "rubro": "Armado de muebles",
+    "telefono": "59899871547",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19624",
+    "nombre": "Micaela",
+    "rubro": "Limpieza",
+    "telefono": "59898890012",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19626",
+    "nombre": "Carmen Lerena",
+    "rubro": "Limpieza",
+    "telefono": "59891099587",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19627",
+    "nombre": "Camila Suarez",
+    "rubro": "Limpieza",
+    "telefono": "59892641205",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19628",
+    "nombre": "Lucia Kaitazoff",
+    "rubro": "Limpieza",
+    "telefono": "59899535247",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19632",
+    "nombre": "Sandra Nion",
+    "rubro": "Limpieza",
+    "telefono": "59899843013",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19637",
+    "nombre": "Fiamma Pereira",
+    "rubro": "Arreglos varios",
+    "telefono": "59898693903",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19644",
+    "nombre": "Michel",
+    "rubro": "Pintura",
+    "telefono": "59895285526",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19649",
+    "nombre": "Leonardo López",
+    "rubro": "Limpieza",
+    "telefono": "59896389817",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19654",
+    "nombre": "Vicky",
+    "rubro": "Jardinería",
+    "telefono": "59899783899",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19656",
+    "nombre": "Lole",
+    "rubro": "Vidriería",
+    "telefono": "59893804677",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19658",
+    "nombre": "Camila",
+    "rubro": "Limpieza",
+    "telefono": "59898712752",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19660",
+    "nombre": "Rita",
+    "rubro": "Armado de muebles",
+    "telefono": "59891223020",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19661",
+    "nombre": "Vicky",
+    "rubro": "Carpintería",
+    "telefono": "59898896876",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19662",
+    "nombre": "Rolando",
+    "rubro": "Limpieza",
+    "telefono": "59898561605",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19663",
+    "nombre": "Marcia",
+    "rubro": "Pintura",
+    "telefono": "59891037639",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19665",
+    "nombre": "Pao",
+    "rubro": "Limpieza",
+    "telefono": "59899696823",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19672",
+    "nombre": "Martin Olivera",
+    "rubro": "Carpintería",
+    "telefono": "59895653314",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19674",
+    "nombre": "Marciolo",
+    "rubro": "Armado de muebles",
+    "telefono": "59892216667",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19675",
+    "nombre": "vanessa",
+    "rubro": "Herrería",
+    "telefono": "59898340411",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19678",
+    "nombre": "Azalia Rodríguez",
+    "rubro": "Limpieza",
+    "telefono": "59899578618",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19680",
+    "nombre": "Alejandrina Esparrago",
+    "rubro": "Limpieza",
+    "telefono": "59897048518",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19682",
+    "nombre": "Leonardo López",
+    "rubro": "Limpieza",
+    "telefono": "59896389817",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19686",
+    "nombre": "Carlos Jubin",
+    "rubro": "Construcción",
+    "telefono": "59895183297",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19689",
+    "nombre": "Sebastian Coradini",
+    "rubro": "Limpieza",
+    "telefono": "59891428482",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19690",
+    "nombre": "Lucas",
+    "rubro": "Armado de muebles",
+    "telefono": "59892849634",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19691",
+    "nombre": "Rahomi",
+    "rubro": "Armado de muebles",
+    "telefono": "59894080500",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19693",
+    "nombre": "Val",
+    "rubro": "Limpieza",
+    "telefono": "59895787873",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19694",
+    "nombre": "Val",
+    "rubro": "Electricidad",
+    "telefono": "59895787873",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19695",
+    "nombre": "Val",
+    "rubro": "Jardinería",
+    "telefono": "59895787873",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19696",
+    "nombre": "Machado",
+    "rubro": "Armado de muebles",
+    "telefono": "59899341087",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19699",
+    "nombre": "Romina Domínguez Sobrera",
+    "rubro": "Limpieza",
+    "telefono": "59896981732",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19700",
+    "nombre": "Flavia",
+    "rubro": "Pintura",
+    "telefono": "59898487738",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19701",
+    "nombre": "Clara Aldabalde",
+    "rubro": "Limpieza",
+    "telefono": "59898995387",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19703",
+    "nombre": "ronald ampuero",
+    "rubro": "Limpieza",
+    "telefono": "59899507899",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19704",
+    "nombre": "Fiore",
+    "rubro": "Electricidad",
+    "telefono": "59899106308",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19706",
+    "nombre": "Vanina Grunberg",
+    "rubro": "Carpintería",
+    "telefono": "59898832326",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19707",
+    "nombre": "Julio Cesar",
+    "rubro": "Armado de muebles",
+    "telefono": "59899278284",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19709",
+    "nombre": "Gastón Correa",
+    "rubro": "Carpintería",
+    "telefono": "59899121540",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19710",
+    "nombre": "Flavia",
+    "rubro": "Limpieza",
+    "telefono": "59898124305",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19714",
+    "nombre": "Juan Carlos Pintos Echeve",
+    "rubro": "Vidriería",
+    "telefono": "59896771300",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19716",
+    "nombre": "Sabri",
+    "rubro": "Construcción",
+    "telefono": "59892039103",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19717",
+    "nombre": "Pablo Braga Uru",
+    "rubro": "Carpintería",
+    "telefono": "59895140267",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19718",
+    "nombre": "Valentina",
+    "rubro": "Jardinería",
+    "telefono": "59892401628",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19719",
+    "nombre": "MONICA VALLARINO",
+    "rubro": "Jardinería",
+    "telefono": "59899062268",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19720",
+    "nombre": "Horacio Piñeyro",
+    "rubro": "Construcción",
+    "telefono": "59899048461",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19721",
+    "nombre": "Anna Corimundo",
+    "rubro": "Armado de muebles",
+    "telefono": "59895112787",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19722",
+    "nombre": "Patricia Cuadrado",
+    "rubro": "Limpieza",
+    "telefono": "59898315302",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19723",
+    "nombre": "Ana",
+    "rubro": "Armado de muebles",
+    "telefono": "59892519504",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19729",
+    "nombre": "Alejo",
+    "rubro": "Armado de muebles",
+    "telefono": "59892955550",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19731",
+    "nombre": "Gimena",
+    "rubro": "Carpintería",
+    "telefono": "59899107863",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19735",
+    "nombre": "Elena",
+    "rubro": "Construcción",
+    "telefono": "59899357990",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19736",
+    "nombre": "Kathia Bell",
+    "rubro": "Limpieza",
+    "telefono": "59899719312",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19739",
+    "nombre": "María Camacho",
+    "rubro": "Jardinería",
+    "telefono": "59899145721",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19740",
+    "nombre": "Ignacio",
+    "rubro": "Armado de muebles",
+    "telefono": "59892975506",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19741",
+    "nombre": "Lole",
+    "rubro": "Herrería",
+    "telefono": "59893804677",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19743",
+    "nombre": "Mariana Ramagli",
+    "rubro": "Limpieza",
+    "telefono": "59892271187",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19752",
+    "nombre": "Nicole",
+    "rubro": "Vidriería",
+    "telefono": "17745109572",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19754",
+    "nombre": "Leonardo Cruz",
+    "rubro": "Vidriería",
+    "telefono": "59896786809",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19755",
+    "nombre": "graciela goncalves",
+    "rubro": "Sanitaria",
+    "telefono": "59899130057",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19756",
+    "nombre": "Geronimo pedrozo",
+    "rubro": "Construcción",
+    "telefono": "59899697293",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19757",
+    "nombre": "Karina",
+    "rubro": "Armado de muebles",
+    "telefono": "59894230924",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19759",
+    "nombre": "Nicaela - Urudata",
+    "rubro": "Carpintería",
+    "telefono": "59896445796",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19761",
+    "nombre": "Adrian Diaz",
+    "rubro": "Armado de muebles",
+    "telefono": "59895633601",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19764",
+    "nombre": "Alberto Garda",
+    "rubro": "Limpieza",
+    "telefono": "13059151172",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19765",
+    "nombre": "Nacho Fernández",
+    "rubro": "Construcción",
+    "telefono": "59898000866",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19766",
+    "nombre": "Julio",
+    "rubro": "Vidriería",
+    "telefono": "59899810495",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19767",
+    "nombre": "Jorgelina Pricolo",
+    "rubro": "Limpieza",
+    "telefono": "59892004242",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19773",
+    "nombre": "Michelle Garay Falcón",
+    "rubro": "Electricidad",
+    "telefono": "59898697680",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19777",
+    "nombre": "ornelas carreras",
+    "rubro": "Sanitaria",
+    "telefono": "59892890246",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19778",
+    "nombre": "Manuel Astiazarán",
+    "rubro": "Pintura",
+    "telefono": "59892365110",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19779",
+    "nombre": "Manuel Astiazarán",
+    "rubro": "Carpintería",
+    "telefono": "59892365110",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19780",
+    "nombre": "Manuel Astiazarán",
+    "rubro": "Sanitaria",
+    "telefono": "59892365110",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19781",
+    "nombre": "Manuel Astiazarán",
+    "rubro": "Construcción",
+    "telefono": "59892365110",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19782",
+    "nombre": "Magui",
+    "rubro": "Armado de muebles",
+    "telefono": "59892400564",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19783",
+    "nombre": "Ximena",
+    "rubro": "Limpieza",
+    "telefono": "59894453689",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19787",
+    "nombre": "Flor",
+    "rubro": "Electricidad",
+    "telefono": "59898958368",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19788",
+    "nombre": "Sofía Molinelli",
+    "rubro": "Electricidad",
+    "telefono": "59897462425",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19795",
+    "nombre": "Soledad Guerra",
+    "rubro": "Limpieza",
+    "telefono": "59898627524",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19797",
+    "nombre": "Fernando stratta",
+    "rubro": "Pintura",
+    "telefono": "59896230929",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19806",
+    "nombre": "Maria",
+    "rubro": "Limpieza",
+    "telefono": "59898500442",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19811",
+    "nombre": "Diego",
+    "rubro": "Limpieza",
+    "telefono": "59899103401",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19812",
+    "nombre": "Cyntia Conde",
+    "rubro": "Armado de muebles",
+    "telefono": "59898388691",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19813",
+    "nombre": "Alejandra",
+    "rubro": "no especificado",
+    "telefono": "59899851879",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19816",
+    "nombre": "Florencia - Multiline",
+    "rubro": "Jardinería",
+    "telefono": "59899469402",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19820",
+    "nombre": "Yanira Sánchez",
+    "rubro": "Sanitaria",
+    "telefono": "59892506000",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19821",
+    "nombre": "Gabriel Alfonso",
+    "rubro": "Fletes",
+    "telefono": "59892444980",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19822",
+    "nombre": "Natalia López Larrañaga",
+    "rubro": "Limpieza",
+    "telefono": "59898746676",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19825",
+    "nombre": "Veronica",
+    "rubro": "Sanitaria",
+    "telefono": "59899598135",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19827",
+    "nombre": "Nahuel Leon",
+    "rubro": "Vidriería",
+    "telefono": "59892450149",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19828",
+    "nombre": "Joaquín",
+    "rubro": "Limpieza",
+    "telefono": "59899153233",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19832",
+    "nombre": "Mariela",
+    "rubro": "Pintura",
+    "telefono": "59892449269",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19834",
+    "nombre": "Avalon",
+    "rubro": "Carpintería",
+    "telefono": "59894465058",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19838",
+    "nombre": "Diana Mariño",
+    "rubro": "Limpieza",
+    "telefono": "59896120521",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19840",
+    "nombre": "Ismael Garrido",
+    "rubro": "Sanitaria",
+    "telefono": "59899264891",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19843",
+    "nombre": "Brenda",
+    "rubro": "Sanitaria",
+    "telefono": "59892978060",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19846",
+    "nombre": "Katy",
+    "rubro": "Pintura",
+    "telefono": "59899424094",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19848",
+    "nombre": "Fabian",
+    "rubro": "Limpieza",
+    "telefono": "59894352073",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19849",
+    "nombre": "Alvaro Hermida",
+    "rubro": "Sanitaria",
+    "telefono": "59899874578",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19852",
+    "nombre": "Eugenia Perez",
+    "rubro": "Limpieza",
+    "telefono": "59898488880",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19853",
+    "nombre": "Carol Bertolio",
+    "rubro": "Limpieza",
+    "telefono": "59891895756",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19854",
+    "nombre": "Valeria",
+    "rubro": "Sanitaria",
+    "telefono": "59899661856",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19861",
+    "nombre": "Emilio Duran",
+    "rubro": "Limpieza",
+    "telefono": "59894257555",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19867",
+    "nombre": "Julio",
+    "rubro": "Vidriería",
+    "telefono": "59891967390",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19868",
+    "nombre": "Virginia palmieri",
+    "rubro": "Limpieza",
+    "telefono": "59899076125",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19869",
+    "nombre": "Mivlish",
+    "rubro": "Armado de muebles",
+    "telefono": "59899063810",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19870",
+    "nombre": "Flor",
+    "rubro": "Armado de muebles",
+    "telefono": "59891533033",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19873",
+    "nombre": "Vicky CASVET",
+    "rubro": "Pintura",
+    "telefono": "59897401518",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19875",
+    "nombre": "Rosana",
+    "rubro": "Construcción",
+    "telefono": "59895012663",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19876",
+    "nombre": "Silvana Zuccolo",
+    "rubro": "Jardinería",
+    "telefono": "59899692920",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19877",
+    "nombre": "Karina",
+    "rubro": "Jardinería",
+    "telefono": "59892618155",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19878",
+    "nombre": "Daniela",
+    "rubro": "Limpieza",
+    "telefono": "59891939058",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19879",
+    "nombre": "Fiorella Perrini",
+    "rubro": "Limpieza",
+    "telefono": "59897956409",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19882",
+    "nombre": "Michelle Garay Falcón",
+    "rubro": "Limpieza",
+    "telefono": "59898697680",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19883",
+    "nombre": "Viviana Vega",
+    "rubro": "Limpieza",
+    "telefono": "59899507879",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19884",
+    "nombre": "Yoli",
+    "rubro": "Armado de muebles",
+    "telefono": "59894975779",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19885",
+    "nombre": "CARMEN BARBE DE M.F.",
+    "rubro": "Carpintería",
+    "telefono": "59894299553",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19887",
+    "nombre": "Ivan Guchin",
+    "rubro": "Jardinería",
+    "telefono": "59898464629",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19888",
+    "nombre": "Lucia",
+    "rubro": "Armado de muebles",
+    "telefono": "59899521532",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19897",
+    "nombre": "Graciela Melendrez",
+    "rubro": "Jardinería",
+    "telefono": "59895833040",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19898",
+    "nombre": "Lujan Lustemberg",
+    "rubro": "Limpieza",
+    "telefono": "59898067956",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19901",
+    "nombre": "Lucia Turrion",
+    "rubro": "Armado de muebles",
+    "telefono": "59898432165",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19902",
+    "nombre": "Gabriela",
+    "rubro": "Limpieza",
+    "telefono": "59895974963",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19904",
+    "nombre": "Carmen Fajardo",
+    "rubro": "Jardinería",
+    "telefono": "59894457672",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19906",
+    "nombre": "Manuela",
+    "rubro": "Vidriería",
+    "telefono": "59896691970",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19910",
+    "nombre": "Gaspar Medind",
+    "rubro": "Limpieza",
+    "telefono": "59898122598",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19913",
+    "nombre": "Cecilia Sosa",
+    "rubro": "Limpieza",
+    "telefono": "59898334425",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19915",
+    "nombre": "Flavia Carrears",
+    "rubro": "Pintura",
+    "telefono": "59895087745",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19918",
+    "nombre": "Mauro",
+    "rubro": "Armado de muebles",
+    "telefono": "59899323073",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19919",
+    "nombre": "Federico",
+    "rubro": "Sanitaria",
+    "telefono": "59898234323",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19920",
+    "nombre": "Romulo Sellanes",
+    "rubro": "Sanitaria",
+    "telefono": "541123875941",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19921",
+    "nombre": "Manuela",
+    "rubro": "Cerrajería",
+    "telefono": "59896691970",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19922",
+    "nombre": "Agencia Nacional de Investigación e Innovación",
+    "rubro": "Carpintería",
+    "telefono": "59892448520",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19927",
+    "nombre": "Florencia",
+    "rubro": "Cortinas de enrollar",
+    "telefono": "59892995522",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19929",
+    "nombre": "Daniel Raúl Fernández Vega",
+    "rubro": "Pintura",
+    "telefono": "59897477215",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19930",
+    "nombre": "Gustavo",
+    "rubro": "Sanitaria",
+    "telefono": "59891835271",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19932",
+    "nombre": "Beatriz Iriñiz",
+    "rubro": "Arreglos varios",
+    "telefono": "59899088306",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19933",
+    "nombre": "Antonella",
+    "rubro": "Construcción",
+    "telefono": "59898527770",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19934",
+    "nombre": "Sthefany",
+    "rubro": "Pintura",
+    "telefono": "59896296673",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19936",
+    "nombre": "Barbara Teliz",
+    "rubro": "Recolección",
+    "telefono": "59896257654",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19939",
+    "nombre": "Sofia Solorzano",
+    "rubro": "Limpieza",
+    "telefono": "59894168742",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19947",
+    "nombre": "Federico Giovanoni",
+    "rubro": "Carpintería",
+    "telefono": "59899732274",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19950",
+    "nombre": "Fernando Albano",
+    "rubro": "Sanitaria",
+    "telefono": "59891642007",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19951",
+    "nombre": "Cintia",
+    "rubro": "Armado de muebles",
+    "telefono": "59892563666",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19952",
+    "nombre": "Fioretto",
+    "rubro": "Armado de muebles",
+    "telefono": "59894571716",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19953",
+    "nombre": "Camila Morelli",
+    "rubro": "Pintura",
+    "telefono": "59891644548",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19954",
+    "nombre": "Constanza Rodriguez",
+    "rubro": "Arreglos varios",
+    "telefono": "59895915796",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19959",
+    "nombre": "Ileana rozada",
+    "rubro": "Sanitaria",
+    "telefono": "59899515626",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19961",
+    "nombre": "Paulo Bonifazi",
+    "rubro": "Limpieza",
+    "telefono": "59898308632",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19962",
+    "nombre": "Gustavo Maurente",
+    "rubro": "Limpieza",
+    "telefono": "59899642850",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19965",
+    "nombre": "Carlos sosa",
+    "rubro": "Armado de muebles",
+    "telefono": "59891058653",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19971",
+    "nombre": "MARIA BIDAULT",
+    "rubro": "Sanitaria",
+    "telefono": "59899637350",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19972",
+    "nombre": "Monica Sarno",
+    "rubro": "Pintura",
+    "telefono": "59899249433",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19975",
+    "nombre": "Paula maciel",
+    "rubro": "Electricidad",
+    "telefono": "59899220374",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19976",
+    "nombre": "Angelina Ferrer",
+    "rubro": "Jardinería",
+    "telefono": "59896505326",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19978",
+    "nombre": "Hernan Ibañez",
+    "rubro": "Carpintería",
+    "telefono": "59897380015",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19979",
+    "nombre": "Florencia Battagliese",
+    "rubro": "Limpieza",
+    "telefono": "59898497761",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19985",
+    "nombre": "Vic",
+    "rubro": "Pintura",
+    "telefono": "59892703683",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19988",
+    "nombre": "Gustavo Gomez",
+    "rubro": "Arreglos varios",
+    "telefono": "59892021600",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19992",
+    "nombre": "Silvia",
+    "rubro": "Construcción",
+    "telefono": "59892399854",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19994",
+    "nombre": "Patricia Gimenez",
+    "rubro": "Construcción",
+    "telefono": "59891835930",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19998",
+    "nombre": "Jorge tub automotores",
+    "rubro": "Pintura",
+    "telefono": "59897509039",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19999",
+    "nombre": "Marta Kandratavicius",
+    "rubro": "Limpieza",
+    "telefono": "59892758663",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "20001",
+    "nombre": "Belen",
+    "rubro": "Sanitaria",
+    "telefono": "59898449523",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "20009",
+    "nombre": "Vanina Grunberg",
+    "rubro": "Jardinería",
+    "telefono": "59898832326",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "20015",
+    "nombre": "Noelia Lois",
+    "rubro": "Sanitaria",
+    "telefono": "59899358982",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "20020",
+    "nombre": "Laren Piñera",
+    "rubro": "Jardinería",
+    "telefono": "59896013410",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "20022",
+    "nombre": "Ignacio",
+    "rubro": "Construcción",
+    "telefono": "59894879922",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "20025",
+    "nombre": "andrea rodriguez",
+    "rubro": "Jardinería",
+    "telefono": "59892103020",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "20027",
+    "nombre": "Romina de Agostino",
+    "rubro": "Limpieza",
+    "telefono": "59892770644",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "20029",
+    "nombre": "Lucia Arballo",
+    "rubro": "Limpieza",
+    "telefono": "59891365858",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "20030",
+    "nombre": "Andrea Guido",
+    "rubro": "Limpieza",
+    "telefono": "59899284853",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "20031",
+    "nombre": "Antonio Nicosia",
+    "rubro": "Pintura",
+    "telefono": "59899180044",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "20032",
+    "nombre": "Eli Ledesma",
+    "rubro": "Vidriería",
+    "telefono": "543516179397",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "20033",
+    "nombre": "Patricia Lago",
+    "rubro": "Limpieza",
+    "telefono": "59895198583",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "20034",
+    "nombre": "Luisina Pirené",
+    "rubro": "Armado de muebles",
+    "telefono": "59894118820",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "20035",
+    "nombre": "Eli Ledesma",
+    "rubro": "Electricidad",
+    "telefono": "543516179397",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "20039",
+    "nombre": "Gauthier Deguibert",
+    "rubro": "Cortinas de enrollar",
+    "telefono": "59896074179",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "20041",
+    "nombre": "Florencia",
+    "rubro": "Carpintería",
+    "telefono": "34636722465",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "20049",
+    "nombre": "ilan",
+    "rubro": "Carpintería",
+    "telefono": "59892998691",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "20058",
+    "nombre": "Ignacio F",
+    "rubro": "Limpieza",
+    "telefono": "59897409070",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "20060",
+    "nombre": "Laura Arana",
+    "rubro": "Construcción",
+    "telefono": "59894796968",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "20065",
+    "nombre": "Escuela técnica las piedras 2",
+    "rubro": "Limpieza",
+    "telefono": "59899045490",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "20067",
+    "nombre": "Tincho",
+    "rubro": "Herrería",
+    "telefono": "59898597648",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "20068",
+    "nombre": "Eduardo",
+    "rubro": "Limpieza",
+    "telefono": "59899799207",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "20075",
+    "nombre": "Alejandra",
+    "rubro": "Armado de muebles",
+    "telefono": "59894818961",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "20077",
+    "nombre": "Agustina Merladett",
+    "rubro": "Limpieza",
+    "telefono": "59898268959",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "20080",
+    "nombre": "Romina Clara",
+    "rubro": "Jardinería",
+    "telefono": "59893547111",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "20083",
+    "nombre": "Sandra Aimé",
+    "rubro": "Pintura",
+    "telefono": "59898282400",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "20086",
+    "nombre": "Renzo",
+    "rubro": "Limpieza",
+    "telefono": "59898669109",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "20087",
+    "nombre": "María Eugenia Burgos",
+    "rubro": "Electricidad",
+    "telefono": "59894022541",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "20090",
+    "nombre": "Alejandra Miranda",
+    "rubro": "Carpintería",
+    "telefono": "59899961966",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "20092",
+    "nombre": "Javier Dominguez",
+    "rubro": "Pintura",
+    "telefono": "59894207780",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "20093",
+    "nombre": "Javier Dominguez",
+    "rubro": "Limpieza",
+    "telefono": "59894207780",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "20096",
+    "nombre": "Cecilia Antonoff",
+    "rubro": "Limpieza",
+    "telefono": "59899132258",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "20098",
+    "nombre": "Natalia Lorena Ríos Espinosa",
+    "rubro": "Sanitaria",
+    "telefono": "59898984391",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "20099",
+    "nombre": "Gabriel",
+    "rubro": "Cerrajería",
+    "telefono": "59899626148",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "20101",
+    "nombre": "Solange Suárez",
+    "rubro": "Jardinería",
+    "telefono": "59892570781",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "20102",
+    "nombre": "Daniella Saturno",
+    "rubro": "Mantenimiento de piscinas",
+    "telefono": "59896838142",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "20103",
+    "nombre": "Marcia Díaz",
+    "rubro": "Jardinería",
+    "telefono": "59899266773",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "20104",
+    "nombre": "Silvana Viera",
+    "rubro": "Limpieza",
+    "telefono": "59898786703",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "20106",
+    "nombre": "Pilar Alonso",
+    "rubro": "Pintura",
+    "telefono": "34685648223",
+    "estado": "Enviadas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19517",
+    "nombre": "Pía Galvalisi",
+    "rubro": "Limpieza",
+    "telefono": "59899985661",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19519",
+    "nombre": "Fujitec",
+    "rubro": "Jardinería",
+    "telefono": "59891780266",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19528",
+    "nombre": "Bessie",
+    "rubro": "Carpintería",
+    "telefono": "59899209522",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19530",
+    "nombre": "Katerin De Leon",
+    "rubro": "Limpieza",
+    "telefono": "59891830637",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19533",
+    "nombre": "Sherilin",
+    "rubro": "Sanitaria",
+    "telefono": "59898893045",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19534",
+    "nombre": "Santiago",
+    "rubro": "Vidriería",
+    "telefono": "59891365265",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19547",
+    "nombre": "Annia Gqitan",
+    "rubro": "Carpintería",
+    "telefono": "59899225253",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19563",
+    "nombre": "María Eugenia Burgos",
+    "rubro": "Limpieza",
+    "telefono": "59894022541",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19575",
+    "nombre": "Mel",
+    "rubro": "Limpieza",
+    "telefono": "59897466223",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19584",
+    "nombre": "Jordi Airaudo",
+    "rubro": "Electricidad",
+    "telefono": "59892685163",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19585",
+    "nombre": "Eloisa",
+    "rubro": "Armado de muebles",
+    "telefono": "59895855816",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19590",
+    "nombre": "Ana Urruzuno",
+    "rubro": "Sanitaria",
+    "telefono": "59895053990",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19600",
+    "nombre": "Feanco R.",
+    "rubro": "Sanitaria",
+    "telefono": "59899134031",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19606",
+    "nombre": "Laura - cliente de Ignacio Mendy",
+    "rubro": "Electricidad",
+    "telefono": "59893401887",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19613",
+    "nombre": "Johana",
+    "rubro": "Armado de muebles",
+    "telefono": "59898890678",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19615",
+    "nombre": "Buchhammer",
+    "rubro": "Construcción",
+    "telefono": "59894966403",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19616",
+    "nombre": "Lourdes",
+    "rubro": "Arreglos varios",
+    "telefono": "59894822462",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19618",
+    "nombre": "Naty",
+    "rubro": "Limpieza",
+    "telefono": "59895192933",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19639",
+    "nombre": "Mary Alvarez",
+    "rubro": "Armado de muebles",
+    "telefono": "59894653822",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19640",
+    "nombre": "Melissa",
+    "rubro": "Armado de muebles",
+    "telefono": "59898334731",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19641",
+    "nombre": "Johana",
+    "rubro": "Jardinería",
+    "telefono": "59896931203",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19652",
+    "nombre": "Victoria",
+    "rubro": "Armado de muebles",
+    "telefono": "59899137307",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19655",
+    "nombre": "Ale Abreu",
+    "rubro": "Armado de muebles",
+    "telefono": "59897336677",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19664",
+    "nombre": "Martina Crespo",
+    "rubro": "Armado de muebles",
+    "telefono": "59893380949",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19668",
+    "nombre": "Melina Barraco",
+    "rubro": "Vidriería",
+    "telefono": "59899304077",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19671",
+    "nombre": "Pía Galvalisi",
+    "rubro": "Limpieza",
+    "telefono": "59899985661",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19676",
+    "nombre": "Alejandra Gabriela Urreta",
+    "rubro": "Limpieza",
+    "telefono": "59899198937",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19677",
+    "nombre": "Maria jose",
+    "rubro": "Limpieza",
+    "telefono": "59891061403",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19684",
+    "nombre": "Paula Viola",
+    "rubro": "Limpieza",
+    "telefono": "59899024734",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19692",
+    "nombre": "Milton",
+    "rubro": "Limpieza",
+    "telefono": "59896272138",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19697",
+    "nombre": "Val",
+    "rubro": "Vidriería",
+    "telefono": "59895787873",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19698",
+    "nombre": "Flor",
+    "rubro": "Armado de muebles",
+    "telefono": "59891950333",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19708",
+    "nombre": "Daniel Magnone",
+    "rubro": "Sanitaria",
+    "telefono": "59891441789",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19712",
+    "nombre": "Andrea Cáfaro",
+    "rubro": "Carpintería",
+    "telefono": "59894223276",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19724",
+    "nombre": "Ana",
+    "rubro": "Electricidad",
+    "telefono": "59892519504",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19733",
+    "nombre": "Romi",
+    "rubro": "Armado de muebles",
+    "telefono": "59892353424",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19734",
+    "nombre": "Ana Nuñez",
+    "rubro": "Carpintería",
+    "telefono": "59892952609",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19738",
+    "nombre": "Agus",
+    "rubro": "Armado de muebles",
+    "telefono": "59898573979",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19770",
+    "nombre": "Santiago Colina",
+    "rubro": "Sanitaria",
+    "telefono": "59898577724",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19772",
+    "nombre": "RosarioArtola",
+    "rubro": "Carpintería",
+    "telefono": "59892943217",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19784",
+    "nombre": "Claudia Villasante",
+    "rubro": "Armado de muebles",
+    "telefono": "59896209172",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19785",
+    "nombre": "Levi",
+    "rubro": "Vidriería",
+    "telefono": "59897170283",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19789",
+    "nombre": "Viviana",
+    "rubro": "Sanitaria",
+    "telefono": "59899487174",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19790",
+    "nombre": "Valeria Ferreira",
+    "rubro": "Sanitaria",
+    "telefono": "59899886559",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19791",
+    "nombre": "María Stipanicic",
+    "rubro": "Construcción",
+    "telefono": "59891222373",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19799",
+    "nombre": "Martin Badalá",
+    "rubro": "Limpieza",
+    "telefono": "59897055970",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19800",
+    "nombre": "Virginia Ticino",
+    "rubro": "Sanitaria",
+    "telefono": "59899731532",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19803",
+    "nombre": "Romina",
+    "rubro": "Armado de muebles",
+    "telefono": "59899349303",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19804",
+    "nombre": "Damian",
+    "rubro": "Sanitaria",
+    "telefono": "59894631276",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19805",
+    "nombre": "Javier",
+    "rubro": "Armado de muebles",
+    "telefono": "59898858792",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19807",
+    "nombre": "Lucy Bermudez",
+    "rubro": "Jardinería",
+    "telefono": "59898607080",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19818",
+    "nombre": "Naty",
+    "rubro": "Armado de muebles",
+    "telefono": "59899979135",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19819",
+    "nombre": "Micaela",
+    "rubro": "Electricidad",
+    "telefono": "59892030404",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19826",
+    "nombre": "Agustina Ferreira",
+    "rubro": "Sanitaria",
+    "telefono": "59891436742",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19831",
+    "nombre": "Michelle Garay Falcón",
+    "rubro": "Sanitaria",
+    "telefono": "59898697680",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19842",
+    "nombre": "Ana María Flores",
+    "rubro": "Armado de muebles",
+    "telefono": "59898346606",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19855",
+    "nombre": "Thalía Giacusa Abreu",
+    "rubro": "Sanitaria",
+    "telefono": "59893833085",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19858",
+    "nombre": "Micaela",
+    "rubro": "no especificado",
+    "telefono": "59891311339",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19859",
+    "nombre": "Mei García",
+    "rubro": "Carpintería",
+    "telefono": "59895483348",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19860",
+    "nombre": "Miriam",
+    "rubro": "Jardinería",
+    "telefono": "59898496208",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19864",
+    "nombre": "Alicia Zouain",
+    "rubro": "Limpieza",
+    "telefono": "59898303563",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19866",
+    "nombre": "Verónica Rodriguez",
+    "rubro": "Deshollinado",
+    "telefono": "59897351424",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19874",
+    "nombre": "Pablo",
+    "rubro": "Limpieza",
+    "telefono": "59895520868",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19880",
+    "nombre": "Natalia",
+    "rubro": "Carpintería",
+    "telefono": "59896218602",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19881",
+    "nombre": "Virginia",
+    "rubro": "Jardinería",
+    "telefono": "59894860887",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19889",
+    "nombre": "Sofía Lozano",
+    "rubro": "Jardinería",
+    "telefono": "59895381895",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19891",
+    "nombre": "Daniel",
+    "rubro": "Sanitaria",
+    "telefono": "59892804005",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19892",
+    "nombre": "Elena Cabrera",
+    "rubro": "Armado de muebles",
+    "telefono": "59898773559",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19894",
+    "nombre": "Tiago G.",
+    "rubro": "Carpintería",
+    "telefono": "59899513475",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19899",
+    "nombre": "Juan Pablo Vico",
+    "rubro": "Jardinería",
+    "telefono": "59899690726",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19900",
+    "nombre": "Fabiana Ramirez",
+    "rubro": "Pintura",
+    "telefono": "59899466725",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19911",
+    "nombre": "Diego",
+    "rubro": "Limpieza",
+    "telefono": "59898929906",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19912",
+    "nombre": "Montserrat",
+    "rubro": "Pintura",
+    "telefono": "59899720487",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19916",
+    "nombre": "Antonella",
+    "rubro": "Herrería",
+    "telefono": "59898527770",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19925",
+    "nombre": "Bettina",
+    "rubro": "Armado de muebles",
+    "telefono": "59897104345",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19928",
+    "nombre": "Mateo Lattaro",
+    "rubro": "Jardinería",
+    "telefono": "59897491237",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19937",
+    "nombre": "Martin",
+    "rubro": "Armado de muebles",
+    "telefono": "59896156345",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19938",
+    "nombre": "Anderson",
+    "rubro": "Limpieza",
+    "telefono": "59892334259",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19940",
+    "nombre": "Daniela",
+    "rubro": "Limpieza",
+    "telefono": "59891939058",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19941",
+    "nombre": "Daniela",
+    "rubro": "Sanitaria",
+    "telefono": "59891939058",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19942",
+    "nombre": "María José",
+    "rubro": "Vidriería",
+    "telefono": "59895761261",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19948",
+    "nombre": "Matías gonzalez",
+    "rubro": "Pintura",
+    "telefono": "59896070717",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19949",
+    "nombre": "Matías González",
+    "rubro": "Vidriería",
+    "telefono": "59896572833",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19955",
+    "nombre": "Ivan Muñiz",
+    "rubro": "Carpintería",
+    "telefono": "59895131099",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19957",
+    "nombre": "Daniel Fernández Martínez",
+    "rubro": "Carpintería",
+    "telefono": "59894734089",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19963",
+    "nombre": "Seba Shaw",
+    "rubro": "Sanitaria",
+    "telefono": "59899812526",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19964",
+    "nombre": "Sofía García Montejo",
+    "rubro": "Sanitaria",
+    "telefono": "59898056127",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19969",
+    "nombre": "Rubelis Dominguez",
+    "rubro": "Pintura",
+    "telefono": "59891081860",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19970",
+    "nombre": "Rafael",
+    "rubro": "Armado de muebles",
+    "telefono": "59899609485",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19973",
+    "nombre": "Alicia",
+    "rubro": "Aire acondicionado",
+    "telefono": "59899942636",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19977",
+    "nombre": "MNH",
+    "rubro": "Jardinería",
+    "telefono": "59898455278",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19980",
+    "nombre": "Alejandro Vazquez",
+    "rubro": "Armado de muebles",
+    "telefono": "59898410984",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19990",
+    "nombre": "Lucia",
+    "rubro": "Armado de muebles",
+    "telefono": "59892174965",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19993",
+    "nombre": "Paola",
+    "rubro": "Vidriería",
+    "telefono": "59893965056",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "20004",
+    "nombre": "Mónica Pereyra",
+    "rubro": "Jardinería",
+    "telefono": "59899671586",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "20005",
+    "nombre": "Mónica Pereyra",
+    "rubro": "Limpieza",
+    "telefono": "59899671586",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "20010",
+    "nombre": "Hiara Valero",
+    "rubro": "Construcción",
+    "telefono": "59899863928",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "20012",
+    "nombre": "Adriana",
+    "rubro": "Armado de muebles",
+    "telefono": "59899685146",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "20013",
+    "nombre": "Carla",
+    "rubro": "Carpintería",
+    "telefono": "59898735713",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "20017",
+    "nombre": "Diego",
+    "rubro": "Limpieza",
+    "telefono": "59891258997",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "20019",
+    "nombre": "Bogacz Graciela",
+    "rubro": "Limpieza",
+    "telefono": "59899711581",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "20037",
+    "nombre": "Noelia Ramirez",
+    "rubro": "Limpieza",
+    "telefono": "59898133245",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "20038",
+    "nombre": "Patricia Rolfo",
+    "rubro": "Limpieza",
+    "telefono": "59899903786",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "20043",
+    "nombre": "Ignacio F",
+    "rubro": "Armado de muebles",
+    "telefono": "59897409070",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "20046",
+    "nombre": "Leon",
+    "rubro": "Electricidad",
+    "telefono": "5491164204035",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "20048",
+    "nombre": "Sofía Carambula",
+    "rubro": "Sanitaria",
+    "telefono": "59899516634",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "20052",
+    "nombre": "Deborah Eilender",
+    "rubro": "Limpieza",
+    "telefono": "59894355293",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "20053",
+    "nombre": "Mauricio madama",
+    "rubro": "Sanitaria",
+    "telefono": "59894030250",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "20056",
+    "nombre": "Juan Busto",
+    "rubro": "Jardinería",
+    "telefono": "59896248662",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "20066",
+    "nombre": "Lucia Herling",
+    "rubro": "Sanitaria",
+    "telefono": "59899932050",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "20069",
+    "nombre": "Felipe Martínez Lemos",
+    "rubro": "Limpieza",
+    "telefono": "59899277801",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "20071",
+    "nombre": "Ruben Portela",
+    "rubro": "Herrería",
+    "telefono": "59899297683",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "20073",
+    "nombre": "Andrés albanes",
+    "rubro": "Jardinería",
+    "telefono": "59897351552",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "20074",
+    "nombre": "Joaquina Cordobez",
+    "rubro": "Sanitaria",
+    "telefono": "59899963984",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "20076",
+    "nombre": "nazarena",
+    "rubro": "Sanitaria",
+    "telefono": "59891085315",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "20079",
+    "nombre": "Blanca",
+    "rubro": "pisos flotantes",
+    "telefono": "59899634461",
+    "estado": "Canceladas",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19283",
+    "nombre": "Mercedes Gonvalvez",
+    "rubro": "Limpieza",
+    "telefono": "59898708553",
+    "estado": "Pago Pendiente",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19726",
+    "nombre": "Alfonso Angulo",
+    "rubro": "Pintura",
+    "telefono": "59899279684",
+    "estado": "Pago Pendiente",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19823",
+    "nombre": "Monica Mazza",
+    "rubro": "Jardinería",
+    "telefono": "59899101179",
+    "estado": "Pago Pendiente",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19886",
+    "nombre": "Lorena Somariva",
+    "rubro": "Limpieza",
+    "telefono": "59895448085",
+    "estado": "Pago Pendiente",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19943",
+    "nombre": "Seba",
+    "rubro": "Sanitaria",
+    "telefono": "59897481968",
+    "estado": "Pago Pendiente",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19944",
+    "nombre": "Seba",
+    "rubro": "Construcción",
+    "telefono": "59897481968",
+    "estado": "Pago Pendiente",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19968",
+    "nombre": "ALESSANDRA QUAGLIOTTI",
+    "rubro": "Limpieza",
+    "telefono": "59891217346",
+    "estado": "Pago Pendiente",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19984",
+    "nombre": "Vic",
+    "rubro": "Electricidad",
+    "telefono": "59892703683",
+    "estado": "Pago Pendiente",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "19986",
+    "nombre": "Geraldine",
+    "rubro": "Jardinería",
+    "telefono": "59898279641",
+    "estado": "Pago Pendiente",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "20002",
+    "nombre": "Marina Hernandez",
+    "rubro": "Limpieza",
+    "telefono": "59899748760",
+    "estado": "Pago Pendiente",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "20014",
+    "nombre": "Tatiana",
+    "rubro": "Armado de muebles",
+    "telefono": "59898994333",
+    "estado": "Pago Pendiente",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "20021",
+    "nombre": "Mariana",
+    "rubro": "Limpieza",
+    "telefono": "59898219404",
+    "estado": "Pago Pendiente",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "20028",
+    "nombre": "Diego Velazco",
+    "rubro": "Limpieza",
+    "telefono": "59899966406",
+    "estado": "Pago Pendiente",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "20036",
+    "nombre": "Ruth Cruz",
+    "rubro": "Limpieza",
+    "telefono": "59899282126",
+    "estado": "Pago Pendiente",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "20062",
+    "nombre": "Susana",
+    "rubro": "Limpieza",
+    "telefono": "59899109581",
+    "estado": "Pago Pendiente",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "20064",
+    "nombre": "Laura Adriana Rodriguez",
+    "rubro": "Limpieza",
+    "telefono": "59898412531",
+    "estado": "Pago Pendiente",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "20088",
+    "nombre": "Lisley S.A",
+    "rubro": "Electricidad",
+    "telefono": "59895841536",
+    "estado": "Pago Pendiente",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "20089",
+    "nombre": "Elida",
+    "rubro": "Limpieza",
+    "telefono": "59894456349",
+    "estado": "Pago Pendiente",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  },
+  {
+    "id": "20091",
+    "nombre": "Dalma Munchs Perdomo",
+    "rubro": "Sanitaria",
+    "telefono": "59899041451",
+    "estado": "Pago Pendiente",
+    "noEsClavo": false,
+    "esClavo": false,
+    "fundamento": ""
+  }
+]
