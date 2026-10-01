@@ -1,7 +1,7 @@
 import json
 import os
 
-with open('/home/leondon-pc/Desktop/Manual_Operativo_Supply_ArreglaTodo/assets/datos_solicitudes_iniciales.json', 'r', encoding='utf-8') as f:
+with open('/home/leondon-pc/Desktop/Manual_Operativo_Supply_ArreglaTodo/assets/datos_solicitudes_auditadas.json', 'r', encoding='utf-8') as f:
     initial_data = json.load(f)
 
 json_str = json.dumps(initial_data, ensure_ascii=False)
@@ -945,6 +945,7 @@ html_template = f'''<!DOCTYPE html>
     </div>
     <div class="header-actions">
       <a href="index.html" class="btn btn-secondary" title="Volver al Manual">📖 Manual Operativo</a>
+      <a href="reporte.html" class="btn btn-gold" title="Abrir Reporte Ejecutivo para Jefes" style="background: linear-gradient(135deg, #f59e0b, #d97706); color:white; border-color:#fbbf24;">📊 Reporte para Jefes</a>
       <button class="btn btn-primary" onclick="openPasteModal()">📋 Pegar Texto Directo</button>
       <button class="btn btn-secondary" onclick="exportJSON()">💾 Exportar Backup</button>
       <button class="btn btn-secondary" onclick="exportCSV()">📊 Exportar Excel</button>
@@ -1304,7 +1305,7 @@ Vidriería
       </div>
       <div class="form-group">
         <label>Solicitudes Convertidas (Aceptadas + Completadas):</label>
-        <input type="number" class="form-input" id="settingConvertidas" value="192">
+        <input type="number" class="form-input" id="settingConvertidas" value="193">
       </div>
       <div class="form-group">
         <label>Aceptadas del Mes (informativo):</label>
@@ -1338,7 +1339,7 @@ Vidriería
       records: [],
       monthlySettings: {{
         totalMes: 581,
-        convertidas: 192,
+        convertidas: 193,
         aceptadas: 73,
         completadas: 119
       }},
@@ -2062,7 +2063,7 @@ Vidriería
 
     function saveSettings() {{
       const total = parseInt(document.getElementById('settingTotalMes').value) || 581;
-      const convertidas = parseInt(document.getElementById('settingConvertidas').value) || 192;
+      const convertidas = parseInt(document.getElementById('settingConvertidas').value) || 193;
       const aceptadas = parseInt(document.getElementById('settingAceptadas').value) || 73;
       const completadas = parseInt(document.getElementById('settingCompletadas').value) || 119;
 
@@ -2084,7 +2085,7 @@ Vidriería
         AppState.records = JSON.parse(JSON.stringify(INITIAL_RECORDS));
         AppState.monthlySettings = {{
           totalMes: 581,
-          convertidas: 192,
+          convertidas: 193,
           aceptadas: 73,
           completadas: 119
         }};

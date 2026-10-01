@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reporte Ejecutivo: Auditoría Operativa & No Conversión | ArreglaTodo</title>
+  <style>
+    :root {
+      --bg-base: #0a0d14;
+      --bg-surface: #121722;
+      --bg-card: #182030;
+      --bg-card-hover: #1f2b42;
+      --border-color: #243047;
+      --border-light: #334466;
+      --primary: #ff6b35;
+      --primary-light: #ff8c5a;
+      --accent: #00b4d8;
+      --success: #10b981;
+      --warning: #f59e0b;
+      --danger: #ef4444;
+      --purple: #8b5cf6;
+      --gold: #fbbf24;
+      --text-main: #f1f5f9;
+      --text-muted: #94a3b8;
+      --text-dim: #64748b;
+      --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font);
+      background-color: var(--bg-base);
+      color: var(--text-main);
+      line-height: 1.5;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Top Executive Header */
+    header {
+      background: var(--bg-surface);
+      border-bottom: 1px solid var(--border-color);
+      padding: 16px 32px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .badge-reporte {
+      background: linear-gradient(135deg, #ff6b35, #ef4444);
+      color: white;
+      font-size: 0.75rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: 4px 12px;
+      border-radius: 20px;
+    }
+
+    .header-titles h1 {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: #fff;
+    }
+
+    .header-titles p {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+    }
+
+    .header-actions {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      border: 1px solid transparent;
+      transition: all 0.2s ease;
+      text-decoration: none;
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: white;
+      border-color: var(--primary-light);
+    }
+    .btn-primary:hover {
+      background: var(--primary-light);
+    }
+
+    .btn-secondary {
+      background: var(--bg-card);
+      color: var(--text-main);
+      border-color: var(--border-color);
+    }
+    .btn-secondary:hover {
+      background: var(--bg-card-hover);
+      border-color: var(--border-light);
+    }
+
+    .container {
+      max-width: 1440px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 28px 32px 60px;
+      flex: 1;
+    }
+
+    /* Methodology / Scope Alert Box */
+    .scope-box {
+      background: linear-gradient(135deg, rgba(30, 41, 59, 0.7) 0%, rgba(15, 23, 42, 0.9) 100%);
+      border: 1px solid #3b82f6;
+      border-left: 5px solid #3b82f6;
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin-bottom: 28px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+    }
+
+    .scope-title {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #60a5fa;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 8px;
+    }
+
+    .scope-content {
+      font-size: 0.88rem;
+      color: #cbd5e1;
+      line-height: 1.6;
+    }
+
+    .scope-content strong {
+      color: #fff;
+    }
+
+    .scope-tags {
+      display: flex;
+      gap: 8px;
+      margin-top: 12px;
+      flex-wrap: wrap;
+    }
+
+    .scope-pill {
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 3px 10px;
+      border-radius: 6px;
+      background: rgba(59, 130, 246, 0.15);
+      border: 1px solid rgba(59, 130, 246, 0.3);
+      color: #93c5fd;
+    }
+
+    /* Financial Impact Grid */
+    .balance-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr) 1.4fr;
+      gap: 16px;
+      margin-bottom: 32px;
+    }
+
+    .kpi-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      position: relative;
+    }
+
+    .kpi-label {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--text-muted);
+      margin-bottom: 6px;
+    }
+
+    .kpi-num {
+      font-size: 2.2rem;
+      font-weight: 800;
+      line-height: 1.1;
+      color: #fff;
+    }
+
+    .kpi-subtext {
+      font-size: 0.75rem;
+      color: var(--text-dim);
+      margin-top: 6px;
+    }
+
+    .hero-card {
+      background: linear-gradient(135deg, #1e1b4b 0%, #172554 100%);
+      border: 1px solid #4f46e5;
+      box-shadow: 0 0 25px rgba(79, 70, 229, 0.25);
+    }
+
+    .hero-card .kpi-label {
+      color: #a5b4fc;
+    }
+
+    .hero-card .kpi-num {
+      color: #38bdf8;
+      text-shadow: 0 0 15px rgba(56, 189, 248, 0.4);
+    }
+
+    .incentive-badge {
+      display: inline-block;
+      background: #10b981;
+      color: white;
+      font-size: 0.78rem;
+      font-weight: 800;
+      padding: 4px 10px;
+      border-radius: 20px;
+      margin-top: 6px;
+      box-shadow: 0 0 12px rgba(16, 185, 129, 0.4);
+    }
+
+    /* Quantitative Analytics Section */
+    .analytics-section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-bottom: 36px;
+    }
+
+    .chart-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 24px;
+    }
+
+    .chart-card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 12px;
+    }
+
+    .chart-card-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .chart-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .bar-row {
+      cursor: pointer;
+      padding: 6px 8px;
+      border-radius: 6px;
+      transition: background 0.15s ease;
+    }
+    .bar-row:hover {
+      background: rgba(255,255,255,0.03);
+    }
+    .bar-row.active {
+      background: rgba(0, 180, 216, 0.12);
+      border-left: 3px solid var(--accent);
+    }
+
+    .bar-info {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.85rem;
+      margin-bottom: 5px;
+    }
+
+    .bar-track {
+      background: #1e293b;
+      height: 8px;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    .bar-fill {
+      height: 100%;
+      border-radius: 4px;
+      transition: width 0.6s ease;
+    }
+
+    .fill-supply { background: linear-gradient(90deg, #f59e0b, #d97706); }
+    .fill-emergencia { background: linear-gradient(90deg, #ef4444, #b91c1c); }
+    .fill-pago { background: linear-gradient(90deg, #8b5cf6, #6d28d9); }
+    .fill-incompatible { background: linear-gradient(90deg, #64748b, #475569); }
+    .fill-error { background: linear-gradient(90deg, #ec4899, #be185d); }
+    .fill-invalido { background: linear-gradient(90deg, #06b6d4, #0891b2); }
+
+    /* Special Conflicts Section (15 Double Check) */
+    .conflicts-section {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: 14px;
+      padding: 26px 30px;
+      margin-bottom: 36px;
+    }
+
+    .conflicts-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 14px;
+    }
+
+    .conflicts-title {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: #f87171;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .conflicts-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+
+    .conflict-group-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      padding: 18px;
+    }
+
+    .conflict-group-title {
+      font-size: 0.92rem;
+      font-weight: 700;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      padding-bottom: 8px;
+    }
+
+    .conflict-item {
+      background: rgba(10, 13, 20, 0.5);
+      border: 1px solid rgba(255,255,255,0.04);
+      border-radius: 6px;
+      padding: 10px 12px;
+      margin-bottom: 8px;
+      font-size: 0.83rem;
+    }
+
+    .conflict-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .conflict-item-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 4px;
+    }
+
+    .conflict-id {
+      font-family: monospace;
+      font-weight: 700;
+      color: var(--primary-light);
+    }
+
+    .conflict-client {
+      font-weight: 600;
+      color: #fff;
+    }
+
+    .conflict-desc {
+      color: #cbd5e1;
+      font-style: italic;
+    }
+
+    /* Evidence Table Section */
+    .table-section {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: 14px;
+      padding: 26px 30px;
+    }
+
+    .table-toolbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .search-input {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 8px 14px;
+      color: #fff;
+      font-size: 0.88rem;
+      min-width: 320px;
+    }
+    .search-input:focus {
+      outline: none;
+      border-color: var(--accent);
+    }
+
+    .filter-pills {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .filter-btn {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      color: var(--text-muted);
+      padding: 5px 12px;
+      border-radius: 20px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+    .filter-btn:hover, .filter-btn.active {
+      background: var(--primary);
+      color: white;
+      border-color: var(--primary);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.88rem;
+      text-align: left;
+    }
+
+    th {
+      background: #151c2a;
+      color: var(--text-muted);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--border-color);
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    td {
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--border-color);
+      vertical-align: middle;
+    }
+
+    tr:hover td {
+      background: rgba(255,255,255,0.02);
+    }
+
+    .badge-rubro {
+      background: #1f2b42;
+      color: #93c5fd;
+      padding: 3px 8px;
+      border-radius: 6px;
+      font-size: 0.75rem;
+      font-weight: 600;
+    }
+
+    .badge-cat {
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      display: inline-block;
+      white-space: nowrap;
+    }
+
+    .cat-supply { background: rgba(245, 158, 11, 0.18); color: #fbbf24; border: 1px solid #d97706; }
+    .cat-emergencia { background: rgba(239, 68, 68, 0.18); color: #f87171; border: 1px solid #dc2626; }
+    .cat-pago { background: rgba(139, 92, 246, 0.18); color: #c084fc; border: 1px solid #7c3aed; }
+    .cat-incompatible { background: rgba(100, 116, 139, 0.2); color: #cbd5e1; border: 1px solid #475569; }
+    .cat-error { background: rgba(236, 72, 153, 0.18); color: #f472b6; border: 1px solid #db2777; }
+    .cat-invalido { background: rgba(6, 182, 212, 0.18); color: #67e8f9; border: 1px solid #0891b2; }
+
+    /* Print Formatting */
+    @media print {
+      header, .header-actions, .table-toolbar, .btn, .filter-pills {
+        display: none !important;
+      }
+      body, .container, .kpi-card, .chart-card, .conflicts-section, .table-section {
+        background: #fff !important;
+        color: #000 !important;
+        box-shadow: none !important;
+      }
+      .kpi-card, .chart-card, .conflicts-section, .table-section, .scope-box {
+        border: 1px solid #cbd5e1 !important;
+        margin-bottom: 20px !important;
+      }
+      .kpi-num, .chart-card-title, .conflicts-title, .scope-title {
+        color: #000 !important;
+      }
+      .hero-card {
+        background: #f8fafc !important;
+        border: 2px solid #4f46e5 !important;
+      }
+      .hero-card .kpi-num {
+        color: #1e40af !important;
+      }
+      .scope-content {
+        color: #334155 !important;
+      }
+      th {
+        background: #f1f5f9 !important;
+        color: #0f172a !important;
+        border-bottom: 2px solid #000 !important;
+      }
+      td {
+        color: #1e293b !important;
+        border-bottom: 1px solid #e2e8f0 !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Executive Header -->
+  <header>
+    <div class="logo-container">
+      <span class="badge-reporte">Dirección Supply</span>
+      <div class="header-titles">
+        <h1>Informe Ejecutivo: Auditoría Operativa & No Conversión</h1>
+        <p>Cierre Oficial • Análisis de Clavos, Deducción de Base y Conversión Real</p>
+      </div>
+    </div>
+    <div class="header-actions">
+      <a href="auditoria.html" class="btn btn-secondary">🔍 Ver Auditoría Operativa</a>
+      <button class="btn btn-primary" onclick="copyExecutiveSummary()">📋 Copiar Resumen</button>
+      <button class="btn btn-secondary" onclick="window.print()">🖨️ Imprimir / Guardar PDF</button>
+    </div>
+  </header>
+
+  <div class="container">
+
+    <!-- Methodology & Scope Alert Box -->
+    <div class="scope-box">
+      <div class="scope-title">
+        <span>📌 Declaración de Alcance, Horario & Criterio Estratégico de Auditoría</span>
+      </div>
+      <div class="scope-content">
+        Por razones operativas y límites estrictos de horario de cierre, el presente informe se enfocó tácticamente en las solicitudes de <strong>mayor criticidad histórica y probabilidad de anomalías (Canceladas, Carpintería, Vidriería, Emergencias, Armado de Muebles)</strong>.
+        <br><br>
+        <strong>Quedaron excluidas de revisión en esta fase:</strong>
+        <ul style="margin: 6px 0 6px 20px;">
+          <li>Todas las solicitudes <strong>Aceptadas</strong> (destacando que se identificó y sumó la <strong>#19994 de Construcción</strong> cerrada con Anthony que figuraba pendiente en sistema), <strong>Completadas</strong> y <strong>Pago Pendiente</strong>.</li>
+          <li>Las solicitudes <strong>Enviadas</strong> de los rubros <strong>Limpieza</strong>, <strong>Pintura</strong> y <strong>Sanitaria</strong>.</li>
+        </ul>
+        <strong>Conclusión de Alcance:</strong> Los <strong>66 clavos documentados constituyen un piso mínimo comprobado</strong>. De completarse la auditoría sobre las solicitudes enviadas pendientes de Limpieza, Pintura y Sanitaria, el volumen de solicitudes no válidas aumentará proporcionalmente.
+      </div>
+      <div class="scope-tags">
+        <span class="scope-pill">Foco Crítico Realizado</span>
+        <span class="scope-pill">193 Solicitudes Convertidas</span>
+        <span class="scope-pill">Piso Conservador de 66 Clavos</span>
+        <span class="scope-pill">15 Casos Estratégicos a Informar</span>
+      </div>
+    </div>
+
+    <!-- Financial & Conversion Balance Cards -->
+    <div class="balance-grid">
+      <div class="kpi-card">
+        <div class="kpi-label">Base Mensual Inicial</div>
+        <div class="kpi-num">581</div>
+        <div class="kpi-subtext">Total solicitudes cargadas</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label">Clavos Comprobados</div>
+        <div class="kpi-num" style="color: var(--gold);">-66</div>
+        <div class="kpi-subtext">A deducir formalmente</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label">Base Válida Neta</div>
+        <div class="kpi-num" style="color: var(--accent);">515</div>
+        <div class="kpi-subtext">Denominador depurado</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label">Convertidas Totales</div>
+        <div class="kpi-num" style="color: var(--success);">193</div>
+        <div class="kpi-subtext">Incluye #19994 (Anthony)</div>
+      </div>
+      <div class="kpi-card hero-card">
+        <div class="kpi-label">Tasa de Conversión Real</div>
+        <div class="kpi-num">37.48%</div>
+        <div class="incentive-badge">Tramo Oficial: $200 USD</div>
+        <div class="kpi-subtext" style="color: #93c5fd; margin-top: 6px;">
+          +4.26% sobre tasa inicial (33.22%). A solo 20 clavos del tramo $250 USD.
+        </div>
+      </div>
+    </div>
+
+    <!-- Analytics Section (Breakdown by Rubro and Motive) -->
+    <div class="analytics-section">
+      
+      <!-- By Rubro Chart -->
+      <div class="chart-card">
+        <div class="chart-card-header">
+          <div class="chart-card-title">
+            <span>📦 Concentración de Clavos por Rubro</span>
+          </div>
+          <span style="font-size: 0.75rem; color: var(--text-dim);">Haz clic para filtrar abajo</span>
+        </div>
+        <div class="chart-list" id="rubroChartList">
+          <!-- Rendered via JS -->
+        </div>
+      </div>
+
+      <!-- By Motive Chart -->
+      <div class="chart-card">
+        <div class="chart-card-header">
+          <div class="chart-card-title">
+            <span>🔍 Causa Raíz de No Conversión (Motivos)</span>
+          </div>
+          <span style="font-size: 0.75rem; color: var(--text-dim);">Estandarización Operativa</span>
+        </div>
+        <div class="chart-list" id="motivoChartList">
+          <!-- Rendered via JS -->
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Special Section: 15 Conflict Cases for Boss Review -->
+    <div class="conflicts-section">
+      <div class="conflicts-header">
+        <div class="conflicts-title">
+          <span>⚠️ Casos Estratégicos a Informar & Resolver (15 Doble Check)</span>
+        </div>
+        <span style="font-size: 0.82rem; color: var(--text-muted);">
+          Decisiones requeridas de Dirección / Oportunidades de Negocio
+        </span>
+      </div>
+
+      <div class="conflicts-grid">
+
+        <!-- Card 1: B2B / Corporativo -->
+        <div class="conflict-group-card">
+          <div class="conflict-group-title">
+            <span>🏢 Cuentas Corporativas & Grandes Clientes</span>
+          </div>
+          <div class="conflict-item">
+            <div class="conflict-item-top">
+              <span class="conflict-id">#19719</span>
+              <span class="conflict-client">MONICA VALLARINO (Riogas) • Jardinería</span>
+            </div>
+            <div class="conflict-desc">"Sector de compras de Riogas. Preocupados por costos de gestión repetitivos, quizás se pueda hacer un avance con un precio preferencial."</div>
+          </div>
+          <div class="conflict-item">
+            <div class="conflict-item-top">
+              <span class="conflict-id">#19922</span>
+              <span class="conflict-client">ANII • Carpintería</span>
+            </div>
+            <div class="conflict-desc">"Hacer seguimiento Agencia Nacional de Investigación e Innovación."</div>
+          </div>
+        </div>
+
+        <!-- Card 2: Fallas Operativas -->
+        <div class="conflict-group-card">
+          <div class="conflict-group-title">
+            <span>🛠️ Fallas Operativas Internas a Corregir</span>
+          </div>
+          <div class="conflict-item">
+            <div class="conflict-item-top">
+              <span class="conflict-id">#19567</span>
+              <span class="conflict-client">Gustavo Laborde • Carpintería</span>
+            </div>
+            <div class="conflict-desc">"Esta venta se cayó por el servicio fallido de Progreso."</div>
+          </div>
+          <div class="conflict-item">
+            <div class="conflict-item-top">
+              <span class="conflict-id">#19684</span>
+              <span class="conflict-client">Paula Viola • Limpieza</span>
+            </div>
+            <div class="conflict-desc">"Acá se cotizó, pero luego se cambió el precio; hay que hablar este tema, porque hay un precio por zona y se debe respetar."</div>
+          </div>
+          <div class="conflict-item">
+            <div class="conflict-item-top">
+              <span class="conflict-id">#19973</span>
+              <span class="conflict-client">Alicia • Aire acondicionado</span>
+            </div>
+            <div class="conflict-desc">"La atención fue pésima y reenviar audios de los proveedores así porque sí es un error."</div>
+          </div>
+          <div class="conflict-item">
+            <div class="conflict-item-top">
+              <span class="conflict-id">#19618</span>
+              <span class="conflict-client">Naty • Limpieza</span>
+            </div>
+            <div class="conflict-desc">"Interesada sin respuesta, posible fuga por canal secundario."</div>
+          </div>
+        </div>
+
+        <!-- Card 3: Leads Rescatables -->
+        <div class="conflict-group-card">
+          <div class="conflict-group-title">
+            <span>📞 Leads Rescatables en Seguimiento Activo</span>
+          </div>
+          <div class="conflict-item">
+            <div class="conflict-item-top">
+              <span class="conflict-id">#20009</span>
+              <span class="conflict-client">Vanina Grunberg • Jardinería</span>
+            </div>
+            <div class="conflict-desc">"Contactar hoy para tratar de remontar."</div>
+          </div>
+          <div class="conflict-item">
+            <div class="conflict-item-top">
+              <span class="conflict-id">#20022</span>
+              <span class="conflict-client">Ignacio • Construcción</span>
+            </div>
+            <div class="conflict-desc">"Contactar para coordinar, quizás se pueda."</div>
+          </div>
+          <div class="conflict-item">
+            <div class="conflict-item-top">
+              <span class="conflict-id">#19877</span>
+              <span class="conflict-client">Karina • Jardinería</span>
+            </div>
+            <div class="conflict-desc">"Para contactar el 07/10."</div>
+          </div>
+          <div class="conflict-item">
+            <div class="conflict-item-top">
+              <span class="conflict-id">#19834</span>
+              <span class="conflict-client">Avalon • Carpintería</span>
+            </div>
+            <div class="conflict-desc">"Tratar de enviar cotización, está a nombre de Pablo Leva, seguro es la que falta de Álvaro."</div>
+          </div>
+          <div class="conflict-item">
+            <div class="conflict-item-top">
+              <span class="conflict-id">#19885 & #19975</span>
+              <span class="conflict-client">Carmen Barbe / Paula Maciel</span>
+            </div>
+            <div class="conflict-desc">"Esperando por Germán / Hacer seguimiento a cotización."</div>
+          </div>
+          <div class="conflict-item">
+            <div class="conflict-item-top">
+              <span class="conflict-id">#19563</span>
+              <span class="conflict-client">María Eugenia Burgos • Limpieza</span>
+            </div>
+            <div class="conflict-desc">"Agendar para fines de octubre hacer un recordatorio."</div>
+          </div>
+        </div>
+
+        <!-- Card 4: Fricción Política Cobro -->
+        <div class="conflict-group-card">
+          <div class="conflict-group-title">
+            <span>💳 Fricción por Política de Pago Adelantado</span>
+          </div>
+          <div class="conflict-item">
+            <div class="conflict-item-top">
+              <span class="conflict-id">#19528</span>
+              <span class="conflict-client">Bessie • Carpintería</span>
+            </div>
+            <div class="conflict-desc">"La venta se cayó por el pago adelantado."</div>
+          </div>
+          <div class="conflict-item">
+            <div class="conflict-item-top">
+              <span class="conflict-id">#19547</span>
+              <span class="conflict-client">Annia Gaitán • Carpintería</span>
+            </div>
+            <div class="conflict-desc">"La venta se cayó por el pago adelantado."</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Evidence Table Section -->
+    <div class="table-section">
+      <div class="table-toolbar">
+        <div>
+          <h3 style="color:#fff; margin-bottom: 4px;">Auditoría Detallada de los 66 Clavos Justificados</h3>
+          <p style="font-size: 0.82rem; color: var(--text-muted);" id="tableCountText">Mostrando 66 clavos</p>
+        </div>
+        <input type="text" class="search-input" id="tableSearch" placeholder="🔍 Buscar por ID, cliente, rubro, o motivo..." oninput="filterTable()">
+      </div>
+
+      <div class="filter-pills" id="filterPillsContainer" style="margin-bottom: 18px;">
+        <button class="filter-btn active" onclick="setFilter('all')">Todos (66)</button>
+        <button class="filter-btn" onclick="setFilter('Carpintería')">Carpintería (20)</button>
+        <button class="filter-btn" onclick="setFilter('Sanitaria')">Sanitaria (11)</button>
+        <button class="filter-btn" onclick="setFilter('Vidriería')">Vidriería (7)</button>
+        <button class="filter-btn" onclick="setFilter('Armado de muebles')">Armado de muebles (6)</button>
+        <button class="filter-btn" onclick="setFilter('Limpieza')">Limpieza (5)</button>
+        <button class="filter-btn" onclick="setFilter('Electricidad')">Electricidad (4)</button>
+        <button class="filter-btn" onclick="setFilter('Falla de Supply')">Falla de Supply</button>
+        <button class="filter-btn" onclick="setFilter('Emergencia')">Emergencias</button>
+        <button class="filter-btn" onclick="setFilter('Pago Adelantado')">Pago Adelantado</button>
+      </div>
+
+      <div style="overflow-x: auto;">
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 80px;">ID</th>
+              <th style="width: 170px;">Cliente</th>
+              <th style="width: 140px;">Rubro</th>
+              <th style="width: 220px;">Causa Raíz Estandarizada</th>
+              <th>Fundamento Inobjetable (Descripción Real)</th>
+              <th style="width: 110px;">Estado</th>
+            </tr>
+          </thead>
+          <tbody id="evidenceTableBody">
+            <!-- Rendered by JS -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    const CLAVOS = [{"id": "19715", "nombre": "Diego", "rubro": "Vidriería", "telefono": "59896339883", "estado": "Pendientes", "noEsClavo": false, "esClavo": true, "fundamento": "Es un servicio complejo para el personal actual de la plataforma, se demoró demasiado para los estandares del cliente y los proveedores dependian de proveedores", "categoriaClavo": "Servicio Incompatible / Fuera de Regla"}, {"id": "20081", "nombre": "Egle Masiliunaite", "rubro": "Carpintería", "telefono": "37060207070", "estado": "Pendientes", "noEsClavo": false, "esClavo": true, "fundamento": "Nadie cotizó", "categoriaClavo": "Falla de Supply / Opciones Insuficientes"}, {"id": "20105", "nombre": "Sandra Amarante", "rubro": "Carpintería", "telefono": "59899597737", "estado": "Pendientes", "noEsClavo": false, "esClavo": true, "fundamento": "Nadie cotizó", "categoriaClavo": "Falla de Supply / Opciones Insuficientes"}, {"id": "19536", "nombre": "Pamela Fagundez", "rubro": "Electricidad", "telefono": "59899242910", "estado": "Enviadas", "noEsClavo": false, "esClavo": true, "fundamento": "Inquilino sin poder de decisión", "categoriaClavo": "Lead No Calificado (Inquilino/Curioso)"}, {"id": "19549", "nombre": "Debora", "rubro": "Vidriería", "telefono": "59898941509", "estado": "Enviadas", "noEsClavo": false, "esClavo": true, "fundamento": "Solo una opción cotizó, y encima leyó mal la solicitud", "categoriaClavo": "Falla de Supply / Opciones Insuficientes"}, {"id": "19565", "nombre": "Martín", "rubro": "Cerrajería", "telefono": "59899702163", "estado": "Enviadas", "noEsClavo": false, "esClavo": true, "fundamento": "Inquilino sin poder de decisión", "categoriaClavo": "Lead No Calificado (Inquilino/Curioso)"}, {"id": "19572", "nombre": "María Laura Garat Bersanino", "rubro": "Carpintería", "telefono": "59894258800", "estado": "Enviadas", "noEsClavo": false, "esClavo": true, "fundamento": "Reparación de ropero, solo una opción", "categoriaClavo": "Falla de Supply / Opciones Insuficientes"}, {"id": "19586", "nombre": "Eloisa", "rubro": "Carpintería", "telefono": "59895855816", "estado": "Enviadas", "noEsClavo": false, "esClavo": true, "fundamento": "La venta se cayó por el pago adelantado", "categoriaClavo": "Fricción de Pago Adelantado"}, {"id": "19607", "nombre": "Aníbal pintos", "rubro": "Carpintería", "telefono": "59898748718", "estado": "Enviadas", "noEsClavo": false, "esClavo": true, "fundamento": "Reparación de puerta, solo una opción de visita", "categoriaClavo": "Falla de Supply / Opciones Insuficientes"}, {"id": "19656", "nombre": "Lole", "rubro": "Vidriería", "telefono": "59893804677", "estado": "Enviadas", "noEsClavo": false, "esClavo": true, "fundamento": "Solicitud creada solo para ayudar a conseguir cotización de vidrios luego de la cagada de Louzado, no se utilizó", "categoriaClavo": "Error Administrativo / Duplicada"}, {"id": "19661", "nombre": "Vicky", "rubro": "Carpintería", "telefono": "59898896876", "estado": "Enviadas", "noEsClavo": false, "esClavo": true, "fundamento": "Cliente quiere mas opciones, solo hay una", "categoriaClavo": "Falla de Supply / Opciones Insuficientes"}, {"id": "19675", "nombre": "vanessa", "rubro": "Herrería", "telefono": "59898340411", "estado": "Enviadas", "noEsClavo": false, "esClavo": true, "fundamento": "Institución estatal con plazos de pago eternos", "categoriaClavo": "Servicio Incompatible / Fuera de Regla"}, {"id": "19714", "nombre": "Juan Carlos Pintos Echeve", "rubro": "Vidriería", "telefono": "59896771300", "estado": "Enviadas", "noEsClavo": false, "esClavo": true, "fundamento": "Solo una opción cotizó", "categoriaClavo": "Falla de Supply / Opciones Insuficientes"}, {"id": "19717", "nombre": "Pablo Braga Uru", "rubro": "Carpintería", "telefono": "59895140267", "estado": "Enviadas", "noEsClavo": false, "esClavo": true, "fundamento": "Fabricación de moldura, precio elevado en solo una cotización, se consigue una mas barata al día siguiente, pero el cliente quedó inconforme", "categoriaClavo": "Falla de Supply / Opciones Insuficientes"}, {"id": "19754", "nombre": "Leonardo Cruz", "rubro": "Vidriería", "telefono": "59896786809", "estado": "Enviadas", "noEsClavo": false, "esClavo": true, "fundamento": "Solo una opción cotizó", "categoriaClavo": "Falla de Supply / Opciones Insuficientes"}, {"id": "19759", "nombre": "Nicaela - Urudata", "rubro": "Carpintería", "telefono": "59896445796", "estado": "Enviadas", "noEsClavo": false, "esClavo": true, "fundamento": "Solo una opción y no tiene RUT", "categoriaClavo": "Servicio Incompatible / Fuera de Regla"}, {"id": "19778", "nombre": "Manuel Astiazarán", "rubro": "Pintura", "telefono": "59892365110", "estado": "Enviadas", "noEsClavo": false, "esClavo": true, "fundamento": "Creada en vano por error", "categoriaClavo": "Error Administrativo / Duplicada"}, {"id": "19779", "nombre": "Manuel Astiazarán", "rubro": "Carpintería", "telefono": "59892365110", "estado": "Enviadas", "noEsClavo": false, "esClavo": true, "fundamento": "Creada en vano por error", "categoriaClavo": "Error Administrativo / Duplicada"}, {"id": "19780", "nombre": "Manuel Astiazarán", "rubro": "Sanitaria", "telefono": "59892365110", "estado": "Enviadas", "noEsClavo": false, "esClavo": true, "fundamento": "Creada en vano por error", "categoriaClavo": "Error Administrativo / Duplicada"}, {"id": "19781", "nombre": "Manuel Astiazarán", "rubro": "Construcción", "telefono": "59892365110", "estado": "Enviadas", "noEsClavo": false, "esClavo": true, "fundamento": "Creada en vano por error", "categoriaClavo": "Error Administrativo / Duplicada"}, {"id": "19816", "nombre": "Florencia - Multiline", "rubro": "Jardinería", "telefono": "59899469402", "estado": "Enviadas", "noEsClavo": false, "esClavo": true, "fundamento": "Multiline, para mi es un clavo", "categoriaClavo": "Servicio Incompatible / Fuera de Regla"}, {"id": "19867", "nombre": "Julio", "rubro": "Vidriería", "telefono": "59891967390", "estado": "Enviadas", "noEsClavo": false, "esClavo": true, "fundamento": "Solo una opción cotizó", "categoriaClavo": "Falla de Supply / Opciones Insuficientes"}, {"id": "19897", "nombre": "Graciela Melendrez", "rubro": "Jardinería", "telefono": "59895833040", "estado": "Enviadas", "noEsClavo": false, "esClavo": true, "fundamento": "La clienta quiere que retiren parte de un arbusto, poner flores, sin info, se cotizó al aire, no respondió mas", "categoriaClavo": "Falla de Supply / Opciones Insuficientes"}, {"id": "19921", "nombre": "Manuela", "rubro": "Cerrajería", "telefono": "59896691970", "estado": "Enviadas", "noEsClavo": false, "esClavo": true, "fundamento": "La cotización se demoró demasiado, es un servicio fuera de lo común", "categoriaClavo": "Falla de Supply / Opciones Insuficientes"}, {"id": "19927", "nombre": "Florencia", "rubro": "Cortinas de enrollar", "telefono": "59892995522", "estado": "Enviadas", "noEsClavo": false, "esClavo": true, "fundamento": "No se dan las condiciones para poder cotizar y realizar el servicio, de acuerdo a la visita", "categoriaClavo": "Servicio Incompatible / Fuera de Regla"}, {"id": "19936", "nombre": "Barbara Teliz", "rubro": "Recolección", "telefono": "59896257654", "estado": "Enviadas", "noEsClavo": false, "esClavo": true, "fundamento": "Solo una opción enviada, se consigió otra mas cara, rubro sin proveedores", "categoriaClavo": "Falla de Supply / Opciones Insuficientes"}, {"id": "19947", "nombre": "Federico Giovanoni", "rubro": "Carpintería", "telefono": "59899732274", "estado": "Enviadas", "noEsClavo": false, "esClavo": true, "fundamento": "Cambio de sentido de puerta, solo una opción", "categoriaClavo": "Falla de Supply / Opciones Insuficientes"}, {"id": "19978", "nombre": "Hernan Ibañez", "rubro": "Carpintería", "telefono": "59897380015", "estado": "Enviadas", "noEsClavo": false, "esClavo": true, "fundamento": "Solo una opción, el cliente quería mas", "categoriaClavo": "Falla de Supply / Opciones Insuficientes"}, {"id": "20049", "nombre": "ilan", "rubro": "Carpintería", "telefono": "59892998691", "estado": "Enviadas", "noEsClavo": false, "esClavo": true, "fundamento": "Una sola opción, cliente no respondió mas", "categoriaClavo": "Falla de Supply / Opciones Insuficientes"}, {"id": "20067", "nombre": "Tincho", "rubro": "Herrería", "telefono": "59898597648", "estado": "Enviadas", "noEsClavo": false, "esClavo": true, "fundamento": "Solo una opción cara de herrería por reparación de una puerta", "categoriaClavo": "Falla de Supply / Opciones Insuficientes"}, {"id": "20090", "nombre": "Alejandra Miranda", "rubro": "Carpintería", "telefono": "59899961966", "estado": "Enviadas", "noEsClavo": false, "esClavo": true, "fundamento": "Se envía solo una opción", "categoriaClavo": "Falla de Supply / Opciones Insuficientes"}, {"id": "19584", "nombre": "Jordi Airaudo", "rubro": "Electricidad", "telefono": "59892685163", "estado": "Canceladas", "noEsClavo": false, "esClavo": true, "fundamento": "Era una emergencia eléctrica, no tenemos gente para éstas cosas", "categoriaClavo": "Emergencia sin Cobertura"}, {"id": "19585", "nombre": "Eloisa", "rubro": "Armado de muebles", "telefono": "59895855816", "estado": "Canceladas", "noEsClavo": false, "esClavo": true, "fundamento": "La venta se cayó por el pago adelantado", "categoriaClavo": "Fricción de Pago Adelantado"}, {"id": "19590", "nombre": "Ana Urruzuno", "rubro": "Sanitaria", "telefono": "59895053990", "estado": "Canceladas", "noEsClavo": false, "esClavo": true, "fundamento": "Era una emergencia sanitaria, no tenemos gente para éstas cosas", "categoriaClavo": "Emergencia sin Cobertura"}, {"id": "19600", "nombre": "Feanco R.", "rubro": "Sanitaria", "telefono": "59899134031", "estado": "Canceladas", "noEsClavo": false, "esClavo": true, "fundamento": "El cliente estaba influenciado por un sanitario que lo plantó, no sabía lo que quería, se le dieron todas las opciones, y de repente canceló, seguramente porque reapareció el que lo plantó", "categoriaClavo": "Falla de Supply / Opciones Insuficientes"}, {"id": "19606", "nombre": "Laura - cliente de Ignacio Mendy", "rubro": "Electricidad", "telefono": "59893401887", "estado": "Canceladas", "noEsClavo": false, "esClavo": true, "fundamento": "Era una emergencia eléctrica, no tenemos gente para éstas cosas", "categoriaClavo": "Emergencia sin Cobertura"}, {"id": "19671", "nombre": "Pía Galvalisi", "rubro": "Limpieza", "telefono": "59899985661", "estado": "Canceladas", "noEsClavo": false, "esClavo": true, "fundamento": "Segunda coordinación sin efectuar en menos de 10 días, es la misma de 59899985661", "categoriaClavo": "Falla de Supply / Opciones Insuficientes"}, {"id": "19677", "nombre": "Maria jose", "rubro": "Limpieza", "telefono": "59891061403", "estado": "Canceladas", "noEsClavo": false, "esClavo": true, "fundamento": "Era un pedido de trabajo, no de servicio", "categoriaClavo": "Servicio Incompatible / Fuera de Regla"}, {"id": "19697", "nombre": "Val", "rubro": "Vidriería", "telefono": "59895787873", "estado": "Canceladas", "noEsClavo": false, "esClavo": true, "fundamento": "Motivo: Sin opciones para el pedido", "categoriaClavo": "Falla de Supply / Opciones Insuficientes"}, {"id": "19708", "nombre": "Daniel Magnone", "rubro": "Sanitaria", "telefono": "59891441789", "estado": "Canceladas", "noEsClavo": false, "esClavo": true, "fundamento": "Se creo una solicitud adicional porque se demoró un proveedor, se derivó a otro y se canceló porque el demorado llegó", "categoriaClavo": "Falla de Supply / Opciones Insuficientes"}, {"id": "19712", "nombre": "Andrea Cáfaro", "rubro": "Carpintería", "telefono": "59894223276", "estado": "Canceladas", "noEsClavo": false, "esClavo": true, "fundamento": "Falta de opciones + precio", "categoriaClavo": "Falla de Supply / Opciones Insuficientes"}, {"id": "19734", "nombre": "Ana Nuñez", "rubro": "Carpintería", "telefono": "59892952609", "estado": "Canceladas", "noEsClavo": false, "esClavo": true, "fundamento": "Sin opciones para la reparacion de la puerta", "categoriaClavo": "Falla de Supply / Opciones Insuficientes"}, {"id": "19772", "nombre": "RosarioArtola", "rubro": "Carpintería", "telefono": "59892943217", "estado": "Canceladas", "noEsClavo": false, "esClavo": true, "fundamento": "😓 Lamentablemente no contamos con el servicio de reparaciones de puertas por el momento.", "categoriaClavo": "Falla de Supply / Opciones Insuficientes"}, {"id": "19790", "nombre": "Valeria Ferreira", "rubro": "Sanitaria", "telefono": "59899886559", "estado": "Canceladas", "noEsClavo": false, "esClavo": true, "fundamento": "Cliente tanteando precios, porque alquila y no va a hacer el trabajo", "categoriaClavo": "Lead No Calificado (Inquilino/Curioso)"}, {"id": "19800", "nombre": "Virginia Ticino", "rubro": "Sanitaria", "telefono": "59899731532", "estado": "Canceladas", "noEsClavo": false, "esClavo": true, "fundamento": "", "categoriaClavo": "Falla de Supply / Opciones Insuficientes"}, {"id": "19805", "nombre": "Javier", "rubro": "Armado de muebles", "telefono": "59898858792", "estado": "Canceladas", "noEsClavo": false, "esClavo": true, "fundamento": "Era una emergencia, no tenemos gente para éstas cosas", "categoriaClavo": "Emergencia sin Cobertura"}, {"id": "19831", "nombre": "Michelle Garay Falcón", "rubro": "Sanitaria", "telefono": "59898697680", "estado": "Canceladas", "noEsClavo": false, "esClavo": true, "fundamento": "Inquilino no resuelve", "categoriaClavo": "Lead No Calificado (Inquilino/Curioso)"}, {"id": "19842", "nombre": "Ana María Flores", "rubro": "Armado de muebles", "telefono": "59898346606", "estado": "Canceladas", "noEsClavo": false, "esClavo": true, "fundamento": "Reparación de un mueble, solo cotizado por Carreño. La clienta quería otra cosa", "categoriaClavo": "Falla de Supply / Opciones Insuficientes"}, {"id": "19855", "nombre": "Thalía Giacusa Abreu", "rubro": "Sanitaria", "telefono": "59893833085", "estado": "Canceladas", "noEsClavo": false, "esClavo": true, "fundamento": "Era una emergencia sanitaria, no tenemos gente para éstas cosas", "categoriaClavo": "Emergencia sin Cobertura"}, {"id": "19858", "nombre": "Micaela", "rubro": "no especificado", "telefono": "59891311339", "estado": "Canceladas", "noEsClavo": false, "esClavo": true, "fundamento": "Era una emergencia, no tenemos gente para éstas cosas", "categoriaClavo": "Emergencia sin Cobertura"}, {"id": "19859", "nombre": "Mei García", "rubro": "Carpintería", "telefono": "59895483348", "estado": "Canceladas", "noEsClavo": false, "esClavo": true, "fundamento": "Cliente curioseando, ni sabia lo que quería, vrio precios y se asustó", "categoriaClavo": "Lead No Calificado (Inquilino/Curioso)"}, {"id": "19864", "nombre": "Alicia Zouain", "rubro": "Limpieza", "telefono": "59898303563", "estado": "Canceladas", "noEsClavo": false, "esClavo": true, "fundamento": "La venta se cayó por el pago adelantado", "categoriaClavo": "Fricción de Pago Adelantado"}, {"id": "19894", "nombre": "Tiago G.", "rubro": "Carpintería", "telefono": "59899513475", "estado": "Canceladas", "noEsClavo": false, "esClavo": true, "fundamento": "No contamos con opciones disponibles para realizar el servicio, que el cliente pide", "categoriaClavo": "Falla de Supply / Opciones Insuficientes"}, {"id": "19916", "nombre": "Antonella", "rubro": "Herrería", "telefono": "59898527770", "estado": "Canceladas", "noEsClavo": false, "esClavo": true, "fundamento": "La clienta cambió de idea y en vez de reparar eligió reemplazo, entonces se canceló la solicitud y se creó otra", "categoriaClavo": "Error Administrativo / Duplicada"}, {"id": "19940", "nombre": "Daniela", "rubro": "Limpieza", "telefono": "59891939058", "estado": "Canceladas", "noEsClavo": false, "esClavo": true, "fundamento": "Limpieza de tapizados, faltan opciones", "categoriaClavo": "Falla de Supply / Opciones Insuficientes"}, {"id": "19955", "nombre": "Ivan Muñiz", "rubro": "Carpintería", "telefono": "59895131099", "estado": "Canceladas", "noEsClavo": false, "esClavo": true, "fundamento": "La venta se cayó por el pago adelantado", "categoriaClavo": "Fricción de Pago Adelantado"}, {"id": "19963", "nombre": "Seba Shaw", "rubro": "Sanitaria", "telefono": "59899812526", "estado": "Canceladas", "noEsClavo": false, "esClavo": true, "fundamento": "Era una emergencia sanitaria, no tenemos gente para éstas cosas", "categoriaClavo": "Emergencia sin Cobertura"}, {"id": "19964", "nombre": "Sofía García Montejo", "rubro": "Sanitaria", "telefono": "59898056127", "estado": "Canceladas", "noEsClavo": false, "esClavo": true, "fundamento": "Era una emergencia sanitaria, no tenemos gente para éstas cosas", "categoriaClavo": "Emergencia sin Cobertura"}, {"id": "19980", "nombre": "Alejandro Vazquez", "rubro": "Armado de muebles", "telefono": "59898410984", "estado": "Canceladas", "noEsClavo": false, "esClavo": true, "fundamento": "Era una emergencia, no tenemos gente para éstas cosas", "categoriaClavo": "Emergencia sin Cobertura"}, {"id": "19990", "nombre": "Lucia", "rubro": "Armado de muebles", "telefono": "59892174965", "estado": "Canceladas", "noEsClavo": false, "esClavo": true, "fundamento": "Era una emergencia, no tenemos gente para éstas cosas", "categoriaClavo": "Emergencia sin Cobertura"}, {"id": "20012", "nombre": "Adriana", "rubro": "Armado de muebles", "telefono": "59899685146", "estado": "Canceladas", "noEsClavo": false, "esClavo": true, "fundamento": "Era una emergencia, no tenemos gente para éstas cosas", "categoriaClavo": "Emergencia sin Cobertura"}, {"id": "20013", "nombre": "Carla", "rubro": "Carpintería", "telefono": "59898735713", "estado": "Canceladas", "noEsClavo": false, "esClavo": true, "fundamento": "Escasez de opciones, precio elevadísimo", "categoriaClavo": "Falla de Supply / Opciones Insuficientes"}, {"id": "20017", "nombre": "Diego", "rubro": "Limpieza", "telefono": "59891258997", "estado": "Canceladas", "noEsClavo": false, "esClavo": true, "fundamento": "La venta se cayó por el pago adelantado", "categoriaClavo": "Fricción de Pago Adelantado"}, {"id": "20046", "nombre": "Leon", "rubro": "Electricidad", "telefono": "5491164204035", "estado": "Canceladas", "noEsClavo": false, "esClavo": true, "fundamento": "Era una emergencia eléctrica, no tenemos gente para éstas cosas", "categoriaClavo": "Emergencia sin Cobertura"}, {"id": "20053", "nombre": "Mauricio madama", "rubro": "Sanitaria", "telefono": "59894030250", "estado": "Canceladas", "noEsClavo": false, "esClavo": true, "fundamento": "Era una emergencia sanitaria, no tenemos gente para éstas cosas", "categoriaClavo": "Emergencia sin Cobertura"}, {"id": "20073", "nombre": "Andrés albanes", "rubro": "Jardinería", "telefono": "59897351552", "estado": "Canceladas", "noEsClavo": false, "esClavo": true, "fundamento": "La venta se cayó por el pago adelantado", "categoriaClavo": "Fricción de Pago Adelantado"}];
+    const CONFLICTOS = [{"id": "19567", "nombre": "Gustavo Laborde", "rubro": "Carpintería", "telefono": "59898965955", "estado": "Enviadas", "noEsClavo": true, "esClavo": true, "fundamento": "Esta venta se cayó por el servicio fallido de Progreso", "categoriaClavo": ""}, {"id": "19719", "nombre": "MONICA VALLARINO", "rubro": "Jardinería", "telefono": "59899062268", "estado": "Enviadas", "noEsClavo": true, "esClavo": true, "fundamento": "Sector de compras de Riogas. Preocupados por costos de gestión repetitivos, quizas se pueda hacer un avance con un precio preferencial", "categoriaClavo": ""}, {"id": "19834", "nombre": "Avalon", "rubro": "Carpintería", "telefono": "59894465058", "estado": "Enviadas", "noEsClavo": true, "esClavo": true, "fundamento": "Tratar de enviar cotización, esta a nombre de Pablo Leva, pero seguro es la que falta de Alvaro", "categoriaClavo": ""}, {"id": "19877", "nombre": "Karina", "rubro": "Jardinería", "telefono": "59892618155", "estado": "Enviadas", "noEsClavo": true, "esClavo": true, "fundamento": "Para contactar el 07/10", "categoriaClavo": ""}, {"id": "19885", "nombre": "CARMEN BARBE DE M.F.", "rubro": "Carpintería", "telefono": "59894299553", "estado": "Enviadas", "noEsClavo": true, "esClavo": true, "fundamento": "Espérando por German", "categoriaClavo": ""}, {"id": "19922", "nombre": "Agencia Nacional de Investigación e Innovación", "rubro": "Carpintería", "telefono": "59892448520", "estado": "Enviadas", "noEsClavo": true, "esClavo": true, "fundamento": "Hacer seguimiento Agencia Nacional de Investigación e Innovación", "categoriaClavo": ""}, {"id": "19975", "nombre": "Paula maciel", "rubro": "Electricidad", "telefono": "59899220374", "estado": "Enviadas", "noEsClavo": true, "esClavo": true, "fundamento": "Hacer seguimiento a la cotización", "categoriaClavo": ""}, {"id": "20009", "nombre": "Vanina Grunberg", "rubro": "Jardinería", "telefono": "59898832326", "estado": "Enviadas", "noEsClavo": true, "esClavo": true, "fundamento": "Contactar hoy para tratar de remontar", "categoriaClavo": ""}, {"id": "20022", "nombre": "Ignacio", "rubro": "Construcción", "telefono": "59894879922", "estado": "Enviadas", "noEsClavo": true, "esClavo": true, "fundamento": "Contactar para coordinar, quizas se pueda", "categoriaClavo": ""}, {"id": "19528", "nombre": "Bessie", "rubro": "Carpintería", "telefono": "59899209522", "estado": "Canceladas", "noEsClavo": true, "esClavo": true, "fundamento": "La venta se cayó por el pago adelantado", "categoriaClavo": ""}, {"id": "19547", "nombre": "Annia Gqitan", "rubro": "Carpintería", "telefono": "59899225253", "estado": "Canceladas", "noEsClavo": true, "esClavo": true, "fundamento": "La venta se cayó por el pago adelantado", "categoriaClavo": ""}, {"id": "19563", "nombre": "María Eugenia Burgos", "rubro": "Limpieza", "telefono": "59894022541", "estado": "Canceladas", "noEsClavo": true, "esClavo": true, "fundamento": "Agendar para fines de octubre hacer un recordatorio", "categoriaClavo": ""}, {"id": "19618", "nombre": "Naty", "rubro": "Limpieza", "telefono": "59895192933", "estado": "Canceladas", "noEsClavo": true, "esClavo": true, "fundamento": "Interesada sin respuesta, me huele a Máximo.", "categoriaClavo": ""}, {"id": "19684", "nombre": "Paula Viola", "rubro": "Limpieza", "telefono": "59899024734", "estado": "Canceladas", "noEsClavo": true, "esClavo": true, "fundamento": "Aca se cotizó, pero luego se cambió el precio, hay que hablar éste tema, porque hay un precio por zona y se debe respetar", "categoriaClavo": ""}, {"id": "19973", "nombre": "Alicia", "rubro": "Aire acondicionado", "telefono": "59899942636", "estado": "Canceladas", "noEsClavo": true, "esClavo": true, "fundamento": "La atención fué pésima y lo de reenviar audios de los proveedores asi porque si, es una bosta", "categoriaClavo": ""}];
+
+    let activeFilter = 'all';
+
+    window.addEventListener('DOMContentLoaded', () => {
+      renderRubroChart();
+      renderMotivoChart();
+      renderTable();
+    });
+
+    // Render Rubro Breakdown Chart
+    function renderRubroChart() {
+      const counts = {};
+      CLAVOS.forEach(c => {
+        counts[c.rubro] = (counts[c.rubro] || 0) + 1;
+      });
+
+      const sorted = Object.entries(counts).sort((a,b) => b[1] - a[1]);
+      const max = sorted[0][1];
+      const container = document.getElementById('rubroChartList');
+
+      let html = '';
+      sorted.forEach(([rubro, cnt]) => {
+        const pct = ((cnt / CLAVOS.length) * 100).toFixed(1);
+        const widthPct = ((cnt / max) * 100).toFixed(1);
+        html += `
+          <div class="bar-row" onclick="setFilter('${rubro}')">
+            <div class="bar-info">
+              <span><strong>${rubro}</strong></span>
+              <span style="color:var(--text-muted);">${cnt} clavos (${pct}%)</span>
+            </div>
+            <div class="bar-track">
+              <div class="bar-fill" style="width: ${widthPct}%; background: var(--primary);"></div>
+            </div>
+          </div>
+        `;
+      });
+      container.innerHTML = html;
+    }
+
+    // Render Motivo Breakdown Chart
+    function renderMotivoChart() {
+      const counts = {
+        'Falla de Supply / Opciones Insuficientes': { cnt: 0, class: 'fill-supply' },
+        'Emergencia sin Cobertura': { cnt: 0, class: 'fill-emergencia' },
+        'Fricción de Pago Adelantado': { cnt: 0, class: 'fill-pago' },
+        'Servicio Incompatible / Fuera de Regla': { cnt: 0, class: 'fill-incompatible' },
+        'Error Administrativo / Duplicada': { cnt: 0, class: 'fill-error' },
+        'Lead No Calificado (Inquilino/Curioso)': { cnt: 0, class: 'fill-invalido' }
+      };
+
+      CLAVOS.forEach(c => {
+        const cat = c.categoriaClavo || 'Falla de Supply / Opciones Insuficientes';
+        if (counts[cat]) counts[cat].cnt++;
+        else counts['Falla de Supply / Opciones Insuficientes'].cnt++;
+      });
+
+      const sorted = Object.entries(counts).sort((a,b) => b[1].cnt - a[1].cnt);
+      const max = sorted[0][1].cnt;
+      const container = document.getElementById('motivoChartList');
+
+      let html = '';
+      sorted.forEach(([cat, data]) => {
+        const cnt = data.cnt;
+        const pct = ((cnt / CLAVOS.length) * 100).toFixed(1);
+        const widthPct = ((cnt / max) * 100).toFixed(1);
+        html += `
+          <div class="bar-row" onclick="setFilter('${cat}')">
+            <div class="bar-info">
+              <span><strong>${cat}</strong></span>
+              <span style="color:var(--text-muted);">${cnt} casos (${pct}%)</span>
+            </div>
+            <div class="bar-track">
+              <div class="bar-fill ${data.class}" style="width: ${widthPct}%;"></div>
+            </div>
+          </div>
+        `;
+      });
+      container.innerHTML = html;
+    }
+
+    // Filter Logic
+    function setFilter(filt) {
+      activeFilter = filt;
+      document.querySelectorAll('.filter-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.innerText.includes(filt) || (filt === 'all' && btn.innerText.includes('Todos')));
+      });
+      renderTable();
+    }
+
+    function filterTable() {
+      renderTable();
+    }
+
+    // Render Table
+    function renderTable() {
+      const tbody = document.getElementById('evidenceTableBody');
+      const search = document.getElementById('tableSearch').value.toLowerCase().trim();
+
+      let visible = 0;
+      let html = '';
+
+      CLAVOS.forEach(c => {
+        const matchesFilter = activeFilter === 'all' || 
+          c.rubro.toLowerCase().includes(activeFilter.toLowerCase()) || 
+          c.categoriaClavo.toLowerCase().includes(activeFilter.toLowerCase());
+
+        const matchesSearch = !search ||
+          c.id.includes(search) ||
+          c.nombre.toLowerCase().includes(search) ||
+          c.rubro.toLowerCase().includes(search) ||
+          c.fundamento.toLowerCase().includes(search) ||
+          c.categoriaClavo.toLowerCase().includes(search);
+
+        if (matchesFilter && matchesSearch) {
+          visible++;
+          const catClass = getCatClass(c.categoriaClavo);
+          html += `
+            <tr>
+              <td><span style="font-family: monospace; font-weight:700; color:var(--primary-light);">#${c.id}</span></td>
+              <td><strong>${escapeHtml(c.nombre)}</strong></td>
+              <td><span class="badge-rubro">${escapeHtml(c.rubro)}</span></td>
+              <td><span class="badge-cat ${catClass}">${c.categoriaClavo}</span></td>
+              <td>${escapeHtml(c.fundamento)}</td>
+              <td><span style="font-size: 0.78rem; color: var(--text-dim);">${c.estado}</span></td>
+            </tr>
+          `;
+        }
+      });
+
+      tbody.innerHTML = html || '<tr><td colspan="6" style="text-align:center; padding: 24px; color: var(--text-muted);">No se encontraron solicitudes con el criterio seleccionado.</td></tr>';
+      document.getElementById('tableCountText').innerText = `Mostrando ${visible} de ${CLAVOS.length} clavos justificados`;
+    }
+
+    function getCatClass(cat) {
+      if (cat.includes('Supply')) return 'cat-supply';
+      if (cat.includes('Emergencia')) return 'cat-emergencia';
+      if (cat.includes('Pago')) return 'cat-pago';
+      if (cat.includes('Incompatible')) return 'cat-incompatible';
+      if (cat.includes('Error')) return 'cat-error';
+      return 'cat-invalido';
+    }
+
+    function escapeHtml(text) {
+      if (!text) return '';
+      return String(text).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+    }
+
+    // Copy Executive Summary for Slack / WhatsApp
+    function copyExecutiveSummary() {
+      let msg = `*REPORTE EJECUTIVO DE AUDITORÍA OPERATIVA & NO CONVERSIÓN*\n`;
+      msg += `📅 Cierre Mensual Oficial | ArreglaTodo\n\n`;
+      msg += `*1. BALANCE Y TASA DE CONVERSIÓN REAL:*\n`;
+      msg += `• Solicitudes Iniciales Cargadas: 581\n`;
+      msg += `• Clavos Auditados Comprobados: -66\n`;
+      msg += `• Base Válida Depurada: *515*\n`;
+      msg += `• Solicitudes Convertidas: *193* (incluye #19994 cerrada con Anthony)\n`;
+      msg += `• Tasa de Conversión Real Resultante: *37.48%* (vs 33.22% sin deducción)\n`;
+      msg += `• Tramo Oficial de Comisiones: *35.5% a 38.9% ($200 USD)*\n\n`;
+      msg += `*2. CAUSA RAÍZ DE NO CONVERSIÓN:*\n`;
+      msg += `• Falla de Supply / Falta de Opciones: 30 casos (45.5%)\n`;
+      msg += `• Emergencias sin Cobertura Inmediata: 13 casos (19.7%)\n`;
+      msg += `• Servicios Incompatibles / Fuera de Regla: 6 casos (9.1%)\n`;
+      msg += `• Fricción por Pago Adelantado: 6 casos (9.1%)\n`;
+      msg += `• Errores Administrativos / Duplicadas: 6 casos (9.1%)\n`;
+      msg += `• Leads No Calificados (Inquilinos/Curiosos): 5 casos (7.6%)\n\n`;
+      msg += `*3. CASOS ESTRATÉGICOS A RESOLVER (15 Doble Check):*\n`;
+      msg += `• Riogas (#19719) y ANII (#19922) pendientes de propuesta B2B.\n`;
+      msg += `• Falla en servicio Progreso (#19567) y control de precios por zona (#19684).\n`;
+      msg += `• 7 leads en seguimiento activo con potencial de rescate.\n\n`;
+      msg += `*4. ALCANCE METODOLÓGICO:*\n`;
+      msg += `Se priorizó el foco crítico en Canceladas, Carpintería, Vidriería y Emergencias. Quedaron sin auditar las Enviadas de Limpieza, Pintura y Sanitaria, por lo que 66 clavos representa un piso conservador.\n\n`;
+      msg += `🔗 Ver tablero completo interactivo:\nhttps://leonmunitz.github.io/Manual-Operativo-Supply-ArreglaTodo-by-Leon/reporte.html`;
+
+      navigator.clipboard.writeText(msg).then(() => {
+        alert('¡Resumen ejecutivo copiado al portapapeles!');
+      }).catch(() => {
+        alert('Copiado');
+      });
+    }
+  </script>
+</body>
+</html>
