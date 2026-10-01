@@ -16,6 +16,8 @@ html_content = f'''<!DOCTYPE html>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Reporte Ejecutivo: Auditoría Operativa & No Conversión | ArreglaTodo</title>
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
   <style>
     :root {{
       --bg-base: #0a0d14;
@@ -32,6 +34,7 @@ html_content = f'''<!DOCTYPE html>
       --danger: #ef4444;
       --purple: #8b5cf6;
       --gold: #fbbf24;
+      --pink: #ec4899;
       --text-main: #f1f5f9;
       --text-muted: #94a3b8;
       --text-dim: #64748b;
@@ -52,6 +55,7 @@ html_content = f'''<!DOCTYPE html>
       min-height: 100vh;
       display: flex;
       flex-direction: column;
+      overflow-x: hidden;
     }}
 
     /* Top Executive Header */
@@ -64,7 +68,7 @@ html_content = f'''<!DOCTYPE html>
       align-items: center;
       position: sticky;
       top: 0;
-      z-index: 100;
+      z-index: 90;
       box-shadow: 0 4px 20px rgba(0,0,0,0.4);
     }}
 
@@ -83,6 +87,7 @@ html_content = f'''<!DOCTYPE html>
       letter-spacing: 1px;
       padding: 4px 12px;
       border-radius: 20px;
+      box-shadow: 0 0 10px rgba(239, 68, 68, 0.3);
     }}
 
     .header-titles h1 {{
@@ -123,6 +128,7 @@ html_content = f'''<!DOCTYPE html>
     }}
     .btn-primary:hover {{
       background: var(--primary-light);
+      box-shadow: 0 0 12px rgba(255, 107, 53, 0.3);
     }}
 
     .btn-secondary {{
@@ -133,6 +139,12 @@ html_content = f'''<!DOCTYPE html>
     .btn-secondary:hover {{
       background: var(--bg-card-hover);
       border-color: var(--border-light);
+    }}
+
+    .btn-gold {{
+      background: linear-gradient(135deg, #f59e0b, #d97706);
+      color: white;
+      border-color: #fbbf24;
     }}
 
     .container {{
@@ -257,8 +269,8 @@ html_content = f'''<!DOCTYPE html>
       box-shadow: 0 0 12px rgba(16, 185, 129, 0.4);
     }}
 
-    /* Quantitative Analytics Section */
-    .analytics-section {{
+    /* Interactive Charts Section */
+    .charts-container {{
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 24px;
@@ -268,20 +280,23 @@ html_content = f'''<!DOCTYPE html>
     .chart-card {{
       background: var(--bg-surface);
       border: 1px solid var(--border-color);
-      border-radius: 12px;
+      border-radius: 14px;
       padding: 24px;
+      display: flex;
+      flex-direction: column;
+      position: relative;
     }}
 
-    .chart-card-header {{
+    .chart-header {{
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 20px;
+      margin-bottom: 16px;
       border-bottom: 1px solid var(--border-color);
       padding-bottom: 12px;
     }}
 
-    .chart-card-title {{
+    .chart-title {{
       font-size: 1.05rem;
       font-weight: 700;
       color: #fff;
@@ -290,52 +305,23 @@ html_content = f'''<!DOCTYPE html>
       gap: 8px;
     }}
 
-    .chart-list {{
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-    }}
-
-    .bar-row {{
-      cursor: pointer;
-      padding: 6px 8px;
+    .chart-hint {{
+      font-size: 0.75rem;
+      color: var(--accent);
+      background: rgba(0, 180, 216, 0.1);
+      padding: 3px 8px;
       border-radius: 6px;
-      transition: background 0.15s ease;
-    }}
-    .bar-row:hover {{
-      background: rgba(255,255,255,0.03);
-    }}
-    .bar-row.active {{
-      background: rgba(0, 180, 216, 0.12);
-      border-left: 3px solid var(--accent);
+      border: 1px solid rgba(0, 180, 216, 0.2);
     }}
 
-    .bar-info {{
+    .chart-canvas-wrapper {{
+      position: relative;
+      flex: 1;
+      min-height: 320px;
       display: flex;
-      justify-content: space-between;
-      font-size: 0.85rem;
-      margin-bottom: 5px;
+      align-items: center;
+      justify-content: center;
     }}
-
-    .bar-track {{
-      background: #1e293b;
-      height: 8px;
-      border-radius: 4px;
-      overflow: hidden;
-    }}
-
-    .bar-fill {{
-      height: 100%;
-      border-radius: 4px;
-      transition: width 0.6s ease;
-    }}
-
-    .fill-supply {{ background: linear-gradient(90deg, #f59e0b, #d97706); }}
-    .fill-emergencia {{ background: linear-gradient(90deg, #ef4444, #b91c1c); }}
-    .fill-pago {{ background: linear-gradient(90deg, #8b5cf6, #6d28d9); }}
-    .fill-incompatible {{ background: linear-gradient(90deg, #64748b, #475569); }}
-    .fill-error {{ background: linear-gradient(90deg, #ec4899, #be185d); }}
-    .fill-invalido {{ background: linear-gradient(90deg, #06b6d4, #0891b2); }}
 
     /* Special Conflicts Section (15 Double Check) */
     .conflicts-section {{
@@ -396,6 +382,12 @@ html_content = f'''<!DOCTYPE html>
       padding: 10px 12px;
       margin-bottom: 8px;
       font-size: 0.83rem;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }}
+    .conflict-item:hover {{
+      background: rgba(255,255,255,0.04);
+      border-color: var(--border-light);
     }}
 
     .conflict-item:last-child {{
@@ -533,9 +525,205 @@ html_content = f'''<!DOCTYPE html>
     .cat-error {{ background: rgba(236, 72, 153, 0.18); color: #f472b6; border: 1px solid #db2777; }}
     .cat-invalido {{ background: rgba(6, 182, 212, 0.18); color: #67e8f9; border: 1px solid #0891b2; }}
 
+    /* =========================================
+       SLIDING SIDE DRAWER (INTERACTION PANEL)
+       ========================================= */
+    .drawer-overlay {{
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.65);
+      backdrop-filter: blur(4px);
+      z-index: 200;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.25s ease;
+    }}
+    .drawer-overlay.open {{
+      opacity: 1;
+      visibility: visible;
+    }}
+
+    .side-drawer {{
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 520px;
+      max-width: 92vw;
+      height: 100vh;
+      background: var(--bg-surface);
+      border-left: 1px solid var(--border-light);
+      box-shadow: -10px 0 40px rgba(0, 0, 0, 0.7);
+      transform: translateX(100%);
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      z-index: 210;
+      display: flex;
+      flex-direction: column;
+    }}
+    .side-drawer.open {{
+      transform: translateX(0);
+    }}
+
+    .drawer-header {{
+      padding: 20px 24px;
+      background: #151c2a;
+      border-bottom: 1px solid var(--border-color);
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 12px;
+    }}
+
+    .drawer-badge {{
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding: 3px 8px;
+      border-radius: 6px;
+      margin-bottom: 6px;
+      background: var(--primary-glow);
+      color: var(--primary-light);
+      border: 1px solid rgba(255, 107, 53, 0.3);
+    }}
+
+    .drawer-header h2 {{
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: #fff;
+    }}
+
+    .drawer-header p {{
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-top: 2px;
+    }}
+
+    .drawer-close {{
+      background: rgba(255,255,255,0.06);
+      border: none;
+      color: var(--text-muted);
+      font-size: 1.5rem;
+      line-height: 1;
+      cursor: pointer;
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.15s ease;
+    }}
+    .drawer-close:hover {{
+      background: rgba(255,255,255,0.12);
+      color: #fff;
+    }}
+
+    .drawer-body {{
+      padding: 24px;
+      overflow-y: auto;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+    }}
+
+    .drawer-section-title {{
+      font-size: 0.88rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--text-muted);
+      margin-bottom: 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }}
+
+    /* Cross Distribution Cards */
+    .cross-item {{
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 10px 14px;
+      margin-bottom: 8px;
+    }}
+
+    .cross-item-header {{
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.84rem;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }}
+
+    .cross-track {{
+      background: #111723;
+      height: 6px;
+      border-radius: 3px;
+      overflow: hidden;
+    }}
+    .cross-fill {{
+      height: 100%;
+      background: var(--accent);
+      border-radius: 3px;
+    }}
+
+    /* Drawer Request Cards */
+    .req-card {{
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      padding: 14px;
+      margin-bottom: 10px;
+      transition: border-color 0.15s ease;
+    }}
+    .req-card:hover {{
+      border-color: var(--border-light);
+    }}
+
+    .req-card-top {{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 6px;
+    }}
+
+    .req-card-id {{
+      font-family: monospace;
+      font-weight: 700;
+      color: var(--primary-light);
+    }}
+
+    .req-card-name {{
+      font-weight: 700;
+      color: #fff;
+      font-size: 0.9rem;
+    }}
+
+    .req-card-desc {{
+      font-size: 0.85rem;
+      color: #cbd5e1;
+      background: rgba(10, 13, 20, 0.4);
+      padding: 8px 10px;
+      border-radius: 6px;
+      margin-top: 8px;
+      border-left: 3px solid var(--primary);
+      line-height: 1.45;
+    }}
+
+    .drawer-footer {{
+      padding: 16px 24px;
+      background: #151c2a;
+      border-top: 1px solid var(--border-color);
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+    }}
+
     /* Print Formatting */
     @media print {{
-      header, .header-actions, .table-toolbar, .btn, .filter-pills {{
+      header, .header-actions, .table-toolbar, .btn, .filter-pills, .drawer-overlay, .side-drawer, .chart-hint {{
         display: none !important;
       }}
       body, .container, .kpi-card, .chart-card, .conflicts-section, .table-section {{
@@ -547,7 +735,7 @@ html_content = f'''<!DOCTYPE html>
         border: 1px solid #cbd5e1 !important;
         margin-bottom: 20px !important;
       }}
-      .kpi-num, .chart-card-title, .conflicts-title, .scope-title {{
+      .kpi-num, .chart-title, .conflicts-title, .scope-title {{
         color: #000 !important;
       }}
       .hero-card {{
@@ -647,32 +835,32 @@ html_content = f'''<!DOCTYPE html>
       </div>
     </div>
 
-    <!-- Analytics Section (Breakdown by Rubro and Motive) -->
-    <div class="analytics-section">
+    <!-- Interactive Charts Section (Chart.js) -->
+    <div class="charts-container">
       
-      <!-- By Rubro Chart -->
+      <!-- Donut Chart: Motivos -->
       <div class="chart-card">
-        <div class="chart-card-header">
-          <div class="chart-card-title">
-            <span>📦 Concentración de Clavos por Rubro</span>
+        <div class="chart-header">
+          <div class="chart-title">
+            <span>🍩 Causas Raíz de No Conversión (Motivos)</span>
           </div>
-          <span style="font-size: 0.75rem; color: var(--text-dim);">Haz clic para filtrar abajo</span>
+          <span class="chart-hint">Haz clic en una porción para ver detalles ➔</span>
         </div>
-        <div class="chart-list" id="rubroChartList">
-          <!-- Rendered via JS -->
+        <div class="chart-canvas-wrapper">
+          <canvas id="motivosDonutChart"></canvas>
         </div>
       </div>
 
-      <!-- By Motive Chart -->
+      <!-- Horizontal Bar Chart: Rubros -->
       <div class="chart-card">
-        <div class="chart-card-header">
-          <div class="chart-card-title">
-            <span>🔍 Causa Raíz de No Conversión (Motivos)</span>
+        <div class="chart-header">
+          <div class="chart-title">
+            <span>📊 Concentración de Clavos por Rubro</span>
           </div>
-          <span style="font-size: 0.75rem; color: var(--text-dim);">Estandarización Operativa</span>
+          <span class="chart-hint">Haz clic en una barra para ver detalles ➔</span>
         </div>
-        <div class="chart-list" id="motivoChartList">
-          <!-- Rendered via JS -->
+        <div class="chart-canvas-wrapper">
+          <canvas id="rubrosBarChart"></canvas>
         </div>
       </div>
 
@@ -685,7 +873,7 @@ html_content = f'''<!DOCTYPE html>
           <span>⚠️ Casos Estratégicos a Informar & Resolver (15 Doble Check)</span>
         </div>
         <span style="font-size: 0.82rem; color: var(--text-muted);">
-          Decisiones requeridas de Dirección / Oportunidades de Negocio
+          Haz clic en cualquier caso para abrir el desglose
         </span>
       </div>
 
@@ -696,14 +884,14 @@ html_content = f'''<!DOCTYPE html>
           <div class="conflict-group-title">
             <span>🏢 Cuentas Corporativas & Grandes Clientes</span>
           </div>
-          <div class="conflict-item">
+          <div class="conflict-item" onclick="openConflictModal('19719')">
             <div class="conflict-item-top">
               <span class="conflict-id">#19719</span>
               <span class="conflict-client">MONICA VALLARINO (Riogas) • Jardinería</span>
             </div>
             <div class="conflict-desc">"Sector de compras de Riogas. Preocupados por costos de gestión repetitivos, quizás se pueda hacer un avance con un precio preferencial."</div>
           </div>
-          <div class="conflict-item">
+          <div class="conflict-item" onclick="openConflictModal('19922')">
             <div class="conflict-item-top">
               <span class="conflict-id">#19922</span>
               <span class="conflict-client">ANII • Carpintería</span>
@@ -717,28 +905,28 @@ html_content = f'''<!DOCTYPE html>
           <div class="conflict-group-title">
             <span>🛠️ Fallas Operativas Internas a Corregir</span>
           </div>
-          <div class="conflict-item">
+          <div class="conflict-item" onclick="openConflictModal('19567')">
             <div class="conflict-item-top">
               <span class="conflict-id">#19567</span>
               <span class="conflict-client">Gustavo Laborde • Carpintería</span>
             </div>
             <div class="conflict-desc">"Esta venta se cayó por el servicio fallido de Progreso."</div>
           </div>
-          <div class="conflict-item">
+          <div class="conflict-item" onclick="openConflictModal('19684')">
             <div class="conflict-item-top">
               <span class="conflict-id">#19684</span>
               <span class="conflict-client">Paula Viola • Limpieza</span>
             </div>
             <div class="conflict-desc">"Acá se cotizó, pero luego se cambió el precio; hay que hablar este tema, porque hay un precio por zona y se debe respetar."</div>
           </div>
-          <div class="conflict-item">
+          <div class="conflict-item" onclick="openConflictModal('19973')">
             <div class="conflict-item-top">
               <span class="conflict-id">#19973</span>
               <span class="conflict-client">Alicia • Aire acondicionado</span>
             </div>
             <div class="conflict-desc">"La atención fue pésima y reenviar audios de los proveedores así porque sí es un error."</div>
           </div>
-          <div class="conflict-item">
+          <div class="conflict-item" onclick="openConflictModal('19618')">
             <div class="conflict-item-top">
               <span class="conflict-id">#19618</span>
               <span class="conflict-client">Naty • Limpieza</span>
@@ -752,42 +940,49 @@ html_content = f'''<!DOCTYPE html>
           <div class="conflict-group-title">
             <span>📞 Leads Rescatables en Seguimiento Activo</span>
           </div>
-          <div class="conflict-item">
+          <div class="conflict-item" onclick="openConflictModal('20009')">
             <div class="conflict-item-top">
               <span class="conflict-id">#20009</span>
               <span class="conflict-client">Vanina Grunberg • Jardinería</span>
             </div>
             <div class="conflict-desc">"Contactar hoy para tratar de remontar."</div>
           </div>
-          <div class="conflict-item">
+          <div class="conflict-item" onclick="openConflictModal('20022')">
             <div class="conflict-item-top">
               <span class="conflict-id">#20022</span>
               <span class="conflict-client">Ignacio • Construcción</span>
             </div>
             <div class="conflict-desc">"Contactar para coordinar, quizás se pueda."</div>
           </div>
-          <div class="conflict-item">
+          <div class="conflict-item" onclick="openConflictModal('19877')">
             <div class="conflict-item-top">
               <span class="conflict-id">#19877</span>
               <span class="conflict-client">Karina • Jardinería</span>
             </div>
             <div class="conflict-desc">"Para contactar el 07/10."</div>
           </div>
-          <div class="conflict-item">
+          <div class="conflict-item" onclick="openConflictModal('19834')">
             <div class="conflict-item-top">
               <span class="conflict-id">#19834</span>
               <span class="conflict-client">Avalon • Carpintería</span>
             </div>
             <div class="conflict-desc">"Tratar de enviar cotización, está a nombre de Pablo Leva, seguro es la que falta de Álvaro."</div>
           </div>
-          <div class="conflict-item">
+          <div class="conflict-item" onclick="openConflictModal('19885')">
             <div class="conflict-item-top">
-              <span class="conflict-id">#19885 & #19975</span>
-              <span class="conflict-client">Carmen Barbe / Paula Maciel</span>
+              <span class="conflict-id">#19885</span>
+              <span class="conflict-client">Carmen Barbe • Carpintería</span>
             </div>
-            <div class="conflict-desc">"Esperando por Germán / Hacer seguimiento a cotización."</div>
+            <div class="conflict-desc">"Esperando por Germán."</div>
           </div>
-          <div class="conflict-item">
+          <div class="conflict-item" onclick="openConflictModal('19975')">
+            <div class="conflict-item-top">
+              <span class="conflict-id">#19975</span>
+              <span class="conflict-client">Paula Maciel • Electricidad</span>
+            </div>
+            <div class="conflict-desc">"Hacer seguimiento a cotización."</div>
+          </div>
+          <div class="conflict-item" onclick="openConflictModal('19563')">
             <div class="conflict-item-top">
               <span class="conflict-id">#19563</span>
               <span class="conflict-client">María Eugenia Burgos • Limpieza</span>
@@ -801,14 +996,14 @@ html_content = f'''<!DOCTYPE html>
           <div class="conflict-group-title">
             <span>💳 Fricción por Política de Pago Adelantado</span>
           </div>
-          <div class="conflict-item">
+          <div class="conflict-item" onclick="openConflictModal('19528')">
             <div class="conflict-item-top">
               <span class="conflict-id">#19528</span>
               <span class="conflict-client">Bessie • Carpintería</span>
             </div>
             <div class="conflict-desc">"La venta se cayó por el pago adelantado."</div>
           </div>
-          <div class="conflict-item">
+          <div class="conflict-item" onclick="openConflictModal('19547')">
             <div class="conflict-item-top">
               <span class="conflict-id">#19547</span>
               <span class="conflict-client">Annia Gaitán • Carpintería</span>
@@ -864,90 +1059,372 @@ html_content = f'''<!DOCTYPE html>
 
   </div>
 
+  <!-- SLIDING SIDE DRAWER -->
+  <div class="drawer-overlay" id="drawerOverlay" onclick="closeDrawer()"></div>
+  <aside class="side-drawer" id="sideDrawer">
+    <div class="drawer-header">
+      <div>
+        <span class="drawer-badge" id="drawerBadge">Rubro</span>
+        <h2 id="drawerTitle">Carpintería</h2>
+        <p id="drawerSubtitle">20 clavos detectados (30.3% del total)</p>
+      </div>
+      <button class="drawer-close" onclick="closeDrawer()">&times;</button>
+    </div>
+    
+    <div class="drawer-body">
+      <!-- Cross Breakdown Card -->
+      <div class="drawer-section">
+        <div class="drawer-section-title" id="drawerCrossTitle">📊 Desglose Cruzado</div>
+        <div id="drawerCrossList">
+          <!-- Rendered via JS -->
+        </div>
+      </div>
+
+      <!-- Request List -->
+      <div class="drawer-section">
+        <div class="drawer-section-title" id="drawerRequestsTitle">📋 Solicitudes del Segmento</div>
+        <div id="drawerCardsList">
+          <!-- Rendered via JS -->
+        </div>
+      </div>
+    </div>
+
+    <div class="drawer-footer">
+      <button class="btn btn-secondary" onclick="filterMainTableFromDrawer()">🔍 Filtrar en Tabla Principal</button>
+      <button class="btn btn-primary" onclick="copyDrawerDetails()">📋 Copiar este Grupo</button>
+    </div>
+  </aside>
+
   <script>
     const CLAVOS = {clavos_json};
     const CONFLICTOS = {conflictos_json};
 
     let activeFilter = 'all';
+    let currentDrawerData = null;
+
+    let donutChartInstance = null;
+    let barChartInstance = null;
 
     window.addEventListener('DOMContentLoaded', () => {{
-      renderRubroChart();
-      renderMotivoChart();
+      initDonutChart();
+      initBarChart();
       renderTable();
+
+      // Keyboard Esc close drawer
+      window.addEventListener('keydown', (e) => {{
+        if (e.key === 'Escape') closeDrawer();
+      }});
     }});
 
-    // Render Rubro Breakdown Chart
-    function renderRubroChart() {{
-      const counts = {{}};
-      CLAVOS.forEach(c => {{
-        counts[c.rubro] = (counts[c.rubro] || 0) + 1;
-      }});
-
-      const sorted = Object.entries(counts).sort((a,b) => b[1] - a[1]);
-      const max = sorted[0][1];
-      const container = document.getElementById('rubroChartList');
-
-      let html = '';
-      sorted.forEach(([rubro, cnt]) => {{
-        const pct = ((cnt / CLAVOS.length) * 100).toFixed(1);
-        const widthPct = ((cnt / max) * 100).toFixed(1);
-        html += `
-          <div class="bar-row" onclick="setFilter('${{rubro}}')">
-            <div class="bar-info">
-              <span><strong>${{rubro}}</strong></span>
-              <span style="color:var(--text-muted);">${{cnt}} clavos (${{pct}}%)</span>
-            </div>
-            <div class="bar-track">
-              <div class="bar-fill" style="width: ${{widthPct}}%; background: var(--primary);"></div>
-            </div>
-          </div>
-        `;
-      }});
-      container.innerHTML = html;
-    }}
-
-    // Render Motivo Breakdown Chart
-    function renderMotivoChart() {{
-      const counts = {{
-        'Falla de Supply / Opciones Insuficientes': {{ cnt: 0, class: 'fill-supply' }},
-        'Emergencia sin Cobertura': {{ cnt: 0, class: 'fill-emergencia' }},
-        'Fricción de Pago Adelantado': {{ cnt: 0, class: 'fill-pago' }},
-        'Servicio Incompatible / Fuera de Regla': {{ cnt: 0, class: 'fill-incompatible' }},
-        'Error Administrativo / Duplicada': {{ cnt: 0, class: 'fill-error' }},
-        'Lead No Calificado (Inquilino/Curioso)': {{ cnt: 0, class: 'fill-invalido' }}
+    // =========================================
+    // CHART.JS INITIALIZATION WITH ONCLICK
+    // =========================================
+    function initDonutChart() {{
+      const motiveCounts = {{
+        'Falla de Supply / Opciones Insuficientes': 0,
+        'Emergencia sin Cobertura': 0,
+        'Servicio Incompatible / Fuera de Regla': 0,
+        'Fricción de Pago Adelantado': 0,
+        'Error Administrativo / Duplicada': 0,
+        'Lead No Calificado (Inquilino/Curioso)': 0
       }};
 
       CLAVOS.forEach(c => {{
         const cat = c.categoriaClavo || 'Falla de Supply / Opciones Insuficientes';
-        if (counts[cat]) counts[cat].cnt++;
-        else counts['Falla de Supply / Opciones Insuficientes'].cnt++;
+        if (motiveCounts[cat] !== undefined) motiveCounts[cat]++;
+        else motiveCounts['Falla de Supply / Opciones Insuficientes']++;
       }});
 
-      const sorted = Object.entries(counts).sort((a,b) => b[1].cnt - a[1].cnt);
-      const max = sorted[0][1].cnt;
-      const container = document.getElementById('motivoChartList');
+      const labels = Object.keys(motiveCounts);
+      const data = Object.values(motiveCounts);
+      const colors = ['#f59e0b', '#ef4444', '#64748b', '#8b5cf6', '#ec4899', '#06b6d4'];
 
-      let html = '';
-      sorted.forEach(([cat, data]) => {{
-        const cnt = data.cnt;
-        const pct = ((cnt / CLAVOS.length) * 100).toFixed(1);
-        const widthPct = ((cnt / max) * 100).toFixed(1);
-        html += `
-          <div class="bar-row" onclick="setFilter('${{cat}}')">
-            <div class="bar-info">
-              <span><strong>${{cat}}</strong></span>
-              <span style="color:var(--text-muted);">${{cnt}} casos (${{pct}}%)</span>
+      const ctx = document.getElementById('motivosDonutChart').getContext('2d');
+      donutChartInstance = new Chart(ctx, {{
+        type: 'doughnut',
+        data: {{
+          labels: labels,
+          datasets: [{{
+            data: data,
+            backgroundColor: colors,
+            borderColor: '#121722',
+            borderWidth: 3,
+            hoverOffset: 12
+          }}]
+        }},
+        options: {{
+          responsive: true,
+          maintainAspectRatio: false,
+          cutout: '62%',
+          plugins: {{
+            legend: {{
+              position: 'bottom',
+              labels: {{
+                color: '#cbd5e1',
+                font: {{ family: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto', size: 11 }},
+                boxWidth: 12,
+                padding: 14
+              }}
+            }},
+            tooltip: {{
+              backgroundColor: '#182030',
+              titleColor: '#fff',
+              bodyColor: '#cbd5e1',
+              borderColor: '#334466',
+              borderWidth: 1,
+              padding: 12,
+              callbacks: {{
+                label: function(context) {{
+                  const val = context.parsed;
+                  const pct = ((val / CLAVOS.length) * 100).toFixed(1);
+                  return ` ${{val}} casos (${{pct}}%) • Clic para ver detalle`;
+                }}
+              }}
+            }}
+          }},
+          onClick: (evt, activeEls) => {{
+            if (activeEls.length > 0) {{
+              const index = activeEls[0].index;
+              const motiveName = labels[index];
+              openDrawer('motivo', motiveName);
+            }}
+          }}
+        }}
+      }});
+    }}
+
+    function initBarChart() {{
+      const rubroCounts = {{}};
+      CLAVOS.forEach(c => {{
+        rubroCounts[c.rubro] = (rubroCounts[c.rubro] || 0) + 1;
+      }});
+
+      const sorted = Object.entries(rubroCounts).sort((a,b) => b[1] - a[1]);
+      const labels = sorted.map(x => x[0]);
+      const data = sorted.map(x => x[1]);
+
+      const ctx = document.getElementById('rubrosBarChart').getContext('2d');
+      barChartInstance = new Chart(ctx, {{
+        type: 'bar',
+        data: {{
+          labels: labels,
+          datasets: [{{
+            data: data,
+            backgroundColor: 'rgba(255, 107, 53, 0.85)',
+            hoverBackgroundColor: '#ff6b35',
+            borderRadius: 6,
+            borderSkipped: false
+          }}]
+        }},
+        options: {{
+          indexAxis: 'y',
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {{
+            legend: {{ display: false }},
+            tooltip: {{
+              backgroundColor: '#182030',
+              titleColor: '#fff',
+              bodyColor: '#cbd5e1',
+              borderColor: '#334466',
+              borderWidth: 1,
+              padding: 12,
+              callbacks: {{
+                label: function(context) {{
+                  const val = context.parsed.x;
+                  const pct = ((val / CLAVOS.length) * 100).toFixed(1);
+                  return ` ${{val}} clavos (${{pct}}%) • Clic para ver detalle`;
+                }}
+              }}
+            }}
+          }},
+          scales: {{
+            x: {{
+              grid: {{ color: 'rgba(255, 255, 255, 0.05)' }},
+              ticks: {{ color: '#94a3b8', font: {{ size: 10 }} }}
+            }},
+            y: {{
+              grid: {{ display: false }},
+              ticks: {{ color: '#f1f5f9', font: {{ weight: 600, size: 11 }} }}
+            }}
+          }},
+          onClick: (evt, activeEls) => {{
+            if (activeEls.length > 0) {{
+              const index = activeEls[0].index;
+              const rubroName = labels[index];
+              openDrawer('rubro', rubroName);
+            }}
+          }}
+        }}
+      }});
+    }}
+
+    // =========================================
+    // SLIDING DRAWER LOGIC (DRILL-DOWN)
+    // =========================================
+    function openDrawer(type, name) {{
+      currentDrawerData = {{ type, name }};
+      const overlay = document.getElementById('drawerOverlay');
+      const drawer = document.getElementById('sideDrawer');
+
+      const badge = document.getElementById('drawerBadge');
+      const title = document.getElementById('drawerTitle');
+      const subtitle = document.getElementById('drawerSubtitle');
+      const crossTitle = document.getElementById('drawerCrossTitle');
+      const crossList = document.getElementById('drawerCrossList');
+      const requestsTitle = document.getElementById('drawerRequestsTitle');
+      const cardsList = document.getElementById('drawerCardsList');
+
+      let matching = [];
+      let crossCounts = {{}};
+
+      if (type === 'rubro') {{
+        badge.innerText = 'Rubro Seleccionado';
+        title.innerText = name;
+        matching = CLAVOS.filter(c => c.rubro.toLowerCase() === name.toLowerCase());
+        const pct = ((matching.length / CLAVOS.length) * 100).toFixed(1);
+        subtitle.innerText = `${{matching.length}} clavos justificados (${{pct}}% del total de clavos)`;
+        crossTitle.innerText = `🔍 ¿Qué causas golpean a ${{name}}?`;
+
+        matching.forEach(c => {{
+          const m = c.categoriaClavo || 'Falla de Supply / Opciones Insuficientes';
+          crossCounts[m] = (crossCounts[m] || 0) + 1;
+        }});
+      }} else {{
+        badge.innerText = 'Causa Raíz Seleccionada';
+        title.innerText = name;
+        matching = CLAVOS.filter(c => (c.categoriaClavo || '').toLowerCase() === name.toLowerCase());
+        const pct = ((matching.length / CLAVOS.length) * 100).toFixed(1);
+        subtitle.innerText = `${{matching.length}} casos documentados (${{pct}}% de las pérdidas)`;
+        crossTitle.innerText = `📦 ¿Qué rubros sufren más por este motivo?`;
+
+        matching.forEach(c => {{
+          crossCounts[c.rubro] = (crossCounts[c.rubro] || 0) + 1;
+        }});
+      }}
+
+      // Render Cross List
+      const sortedCross = Object.entries(crossCounts).sort((a,b) => b[1] - a[1]);
+      let crossHtml = '';
+      sortedCross.forEach(([key, count]) => {{
+        const cPct = ((count / matching.length) * 100).toFixed(1);
+        crossHtml += `
+          <div class="cross-item">
+            <div class="cross-item-header">
+              <span>${{key}}</span>
+              <span style="color:var(--accent); font-weight:700;">${{count}} (${{cPct}}%)</span>
             </div>
-            <div class="bar-track">
-              <div class="bar-fill ${{data.class}}" style="width: ${{widthPct}}%;"></div>
+            <div class="cross-track">
+              <div class="cross-fill" style="width: ${{cPct}}%;"></div>
             </div>
           </div>
         `;
       }});
-      container.innerHTML = html;
+      crossList.innerHTML = crossHtml;
+
+      // Render Individual Requests
+      requestsTitle.innerText = `📋 Solicitudes Individuales (${{matching.length}})`;
+      let cardsHtml = '';
+      matching.forEach(c => {{
+        cardsHtml += `
+          <div class="req-card">
+            <div class="req-card-top">
+              <span class="req-card-id">#${{c.id}}</span>
+              <span class="badge-rubro">${{c.rubro}}</span>
+            </div>
+            <div class="req-card-name">${{escapeHtml(c.nombre)}}</div>
+            <div style="font-size: 0.78rem; color: var(--gold); margin-top:2px;">
+              ${{c.categoriaClavo}}
+            </div>
+            <div class="req-card-desc">
+              "${{escapeHtml(c.fundamento || 'Clavo comprobado para deducción de base.')}}"
+            </div>
+          </div>
+        `;
+      }});
+      cardsList.innerHTML = cardsHtml;
+
+      overlay.classList.add('open');
+      drawer.classList.add('open');
     }}
 
-    // Filter Logic
+    function closeDrawer() {{
+      document.getElementById('drawerOverlay').classList.remove('open');
+      document.getElementById('sideDrawer').classList.remove('open');
+    }}
+
+    function filterMainTableFromDrawer() {{
+      if (currentDrawerData) {{
+        setFilter(currentDrawerData.name);
+        closeDrawer();
+        document.querySelector('.table-section').scrollIntoView({{ behavior: 'smooth' }});
+      }}
+    }}
+
+    function copyDrawerDetails() {{
+      if (!currentDrawerData) return;
+      const {{ type, name }} = currentDrawerData;
+      const matching = type === 'rubro' ? 
+        CLAVOS.filter(c => c.rubro.toLowerCase() === name.toLowerCase()) :
+        CLAVOS.filter(c => (c.categoriaClavo || '').toLowerCase() === name.toLowerCase());
+
+      let text = `*DESGLOSE AUDITADO: ${{name.toUpperCase()}} (${{matching.length}} CASOS)*\\n\\n`;
+      matching.forEach((c, idx) => {{
+        text += `${{idx + 1}}. #${{c.id}} • ${{c.nombre}} (${{c.rubro}}): ${{c.fundamento}}\\n`;
+      }});
+
+      navigator.clipboard.writeText(text).then(() => {{
+        alert(`¡Detalles de ${{name}} copiados al portapapeles!`);
+      }});
+    }}
+
+    // Conflict Click Modal / Drilldown
+    function openConflictModal(id) {{
+      const item = CONFLICTOS.find(c => c.id === id);
+      if (!item) return;
+
+      const badge = document.getElementById('drawerBadge');
+      const title = document.getElementById('drawerTitle');
+      const subtitle = document.getElementById('drawerSubtitle');
+      const crossTitle = document.getElementById('drawerCrossTitle');
+      const crossList = document.getElementById('drawerCrossList');
+      const requestsTitle = document.getElementById('drawerRequestsTitle');
+      const cardsList = document.getElementById('drawerCardsList');
+
+      badge.innerText = 'Caso Estratégico (Doble Check)';
+      title.innerText = `#${{item.id}} - ${{item.nombre}}`;
+      subtitle.innerText = `Rubro: ${{item.rubro}} • Estado: ${{item.estado}}`;
+      crossTitle.innerText = `🎯 Resolución Requerida`;
+      crossList.innerHTML = `
+        <div class="cross-item">
+          <div style="font-size:0.85rem; color:#f87171; font-weight:700;">Requiere decisión del jefe</div>
+          <div style="font-size:0.82rem; color:var(--text-muted); margin-top:4px;">
+            Este caso tiene ambos casilleros marcados. Si el jefe lo aprueba como clavo, se descuenta de la base y aporta a comisiones.
+          </div>
+        </div>
+      `;
+
+      requestsTitle.innerText = `Detalle y Fundamento Registrado`;
+      cardsList.innerHTML = `
+        <div class="req-card" style="border-left: 3px solid #ef4444;">
+          <div class="req-card-top">
+            <span class="req-card-id">#${{item.id}}</span>
+            <span class="badge-rubro">${{item.rubro}}</span>
+          </div>
+          <div class="req-card-name">${{escapeHtml(item.nombre)}}</div>
+          <div class="req-card-desc" style="font-size: 0.9rem; color:#fff;">
+            "${{escapeHtml(item.fundamento)}}"
+          </div>
+        </div>
+      `;
+
+      document.getElementById('drawerOverlay').classList.add('open');
+      document.getElementById('sideDrawer').classList.add('open');
+    }}
+
+    // =========================================
+    // TABLE FILTER & SEARCH
+    // =========================================
     function setFilter(filt) {{
       activeFilter = filt;
       document.querySelectorAll('.filter-btn').forEach(btn => {{
@@ -960,7 +1437,6 @@ html_content = f'''<!DOCTYPE html>
       renderTable();
     }}
 
-    // Render Table
     function renderTable() {{
       const tbody = document.getElementById('evidenceTableBody');
       const search = document.getElementById('tableSearch').value.toLowerCase().trim();
@@ -987,8 +1463,8 @@ html_content = f'''<!DOCTYPE html>
             <tr>
               <td><span style="font-family: monospace; font-weight:700; color:var(--primary-light);">#${{c.id}}</span></td>
               <td><strong>${{escapeHtml(c.nombre)}}</strong></td>
-              <td><span class="badge-rubro">${{escapeHtml(c.rubro)}}</span></td>
-              <td><span class="badge-cat ${{catClass}}">${{c.categoriaClavo}}</span></td>
+              <td><span class="badge-rubro" style="cursor:pointer;" onclick="openDrawer('rubro', '${{c.rubro}}')">${{escapeHtml(c.rubro)}}</span></td>
+              <td><span class="badge-cat ${{catClass}}" style="cursor:pointer;" onclick="openDrawer('motivo', '${{c.categoriaClavo}}')">${{c.categoriaClavo}}</span></td>
               <td>${{escapeHtml(c.fundamento)}}</td>
               <td><span style="font-size: 0.78rem; color: var(--text-dim);">${{c.estado}}</span></td>
             </tr>
